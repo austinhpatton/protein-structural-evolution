@@ -30,11 +30,12 @@ setwd(basedir)
 # Read in the gene counts for each orthogroup, for each sample/species in TCS. 
 counts.mat <- vroom('Orthogroups.GeneCount.tsv', delim = '\t', col_names = T)
 og.no <- vroom('./Results_Aug10_1/Phylogenetic_Hierarchical_Orthogroups/N0.tsv')
+n0.ogs <- og.no[which(og.no$`Gene Tree Parent Clade` == 'n0'),]
 
-# Summarize gene couts of each N0.HOG for each species. 
-for(hog in 1:length(og.no$HOG)){
-  og.no
-}
+# # Summarize gene couts of each N0.HOG for each species. 
+# for(hog in 1:length(og.no$HOG)){
+#   og.no
+# }
 
 # A function to summarize gene counts per orthogroup (e.g. mean, median, SD, SE) for a set of species. 
 summarize_counts <- 
@@ -139,39 +140,161 @@ ggsave(count.summ.plt, file = 'TCS-OG-CountSummaries.pdf',
 
 # Lets summarize these data using UMAP
 # Start by pulling out the subset of our data that includes only those species for which we may correspond proteins to UniProt/AlphaFold.
-up.tax <- read.table('./UniProt-Queryable-Taxa.txt', header = T, sep ='\t')
-up.tax$CombinedID <- paste(up.tax$EukProt_ID, up.tax$Name_to_Use, sep = '_') 
-up.og.counts.mat <- counts.mat[,c(1,which(colnames(counts.mat) %in% up.tax$CombinedID))]
+up.tax <- read.table('../../../github/protein-structural-evolution/UniProt-Queryable-Taxa.txt', header = T, sep ='\t')
+tax <- colnames(counts.mat)[1:196]
+spps <- sub(tax, pattern = ".*?_", replacement = "")
+tax <- data.frame(CombinedID = tax, Species = spps)
+up.tax <- tax[which(tax$Species %in% up.tax[,1]),]
 
-# Perform some initial clustering of the count data 
+#up.tax$CombinedID <- paste(up.tax$EukProt_ID, up.tax$Name_to_Use, sep = '_') 
+up.og.counts.mat <- counts.mat[,c(1,which(colnames(counts.mat) %in% up.tax$CombinedID))]
+rm(counts.mat)
+
+# Read in taxonomic metadata. 
+taxonomy <- 
+  read.table('~/ArcadiaScience/Protein-SeqStruct-Evolution/EukProt-V3-Data/EukProt-Taxonomic-Metadata.tsv',
+             header = T)
+taxonomy <- taxonomy[which(taxonomy$Name_to_Use %in% up.tax$Species),]
+taxonomy$CombinedID <- paste(taxonomy$EukProt_ID, taxonomy$Name_to_Use, sep = "_")
+sup.grps <- unique(taxonomy$Supergroup_UniEuk)
+
+# And pull out the set of species in each supergroup
+tax.sets <- list()
+for(grp in 1:length(sup.grps)){
+  tax.sets[[grp]] <-
+    taxonomy[which(taxonomy$Supergroup_UniEuk == sup.grps[grp]),]
+}
+names(tax.sets) <- sup.grps
+
+# Keep only the supergroups 
+tax.sets <- tax.sets[sapply(tax.sets, nrow) >= 10]
+
+# Set up a function to pull out and format the gene count data for any taxonomic group:
+format.counts <- 
+  function(taxonomic.group, count.data, umap.config){
+    print(paste0("Pulling out counts for ", taxonomic.group))
+    if(taxonomic.group != "all"){
+      # pull out the counts for the focal taxonomic group. 
+      counts <- 
+        count.data[,c(1,which(colnames(count.data) %in% 
+                                tax.sets[[taxonomic.group]]$CombinedID))]
+    }else{
+      counts <- count.data
+    }
+    
+    
+    # And remove any orthogroup that is present in fewer than two species. 
+    counts <- counts[which(rowSums(counts[,-1] > 0) > 1),]
+    
+    # Log10 transform to normalize *slightly*
+    log10.counts <- counts
+    log10.counts[,-1] <- log10(counts[,-1]+1)
+    
+    # Run umap-learn
+    # Now go ahead and run UMAP-learn
+    log10.umap <- 
+      umap(log10.counts[,-1], 
+           config = umap.config, 
+           method = 'umap-learn')
+
+    # Plot it. 
+    umap.df <- as.data.frame(log10.umap$layout)
+    colnames(umap.df) <- c('UMAP_Axis1', 'UMAP_Axis2')
+    
+    # Calculate variances of rows, and use to color when plotting
+    umap.df$CountVariance <- apply(log10.counts[,-1], var, MARGIN = 1)
+    umap.df$Log10CountVariance <- log10(umap.df$CountVariance+1)
+    
+    umap.plt <-
+      ggplot(data = umap.df, aes(x = UMAP_Axis1, y = UMAP_Axis2, 
+                                 color = CountVariance)) + 
+      geom_point(size = 0.75, alpha = 0.15) + 
+      scale_color_met_c('Hiroshige', direction = -1) + 
+      theme_bw(base_size = 14) + 
+      xlab('UMAP Axis 1') +
+      ylab('UMAP Axis 2') + 
+      labs(color = "Count\nVariance")
+    
+    results <- list(Log10_CountData = log10.counts,
+                    umap = log10.umap,
+                    umap.df = umap.df,
+                    umap.plot = umap.plt)
+    return(results)
+  }
+
+# Set some configurations
+umap.config <- umap.defaults
+umap.config$n_neighbors <- 50
+umap.config$knn_repeats <- 10
+umap.config$metric <- 'euclidean'
+umap.config$n_epochs <- 1000
+umap.config$min_dist <- 0.15
+umap.config$spread <- 1
+umap.config$verbose <- TRUE
+
+opis.umap.res <- format.counts('Opisthokonta', up.og.counts.mat, umap.config)
+chlor.umap.res <- format.counts('Chloroplastida', up.og.counts.mat, umap.config)
+alve.umap.res <- format.counts('Alveolata', up.og.counts.mat, umap.config)
+
+
+umap.config$n_neighbors <- 50
+umap.config$min_dist <- 0.4
+all.umap.res <- format.counts('all', up.og.counts.mat, umap.config)
+all.umap.res$umap.plot
+# Plot them all together. 
+umap.plts <- 
+  plot_grid(all.umap.res$umap.plot + ggtitle('All UniProt TCS'), 
+            opis.umap.res$umap.plot + ggtitle('Opisthokonta'), 
+            chlor.umap.res$umap.plot + ggtitle('Chloroplastida'), 
+            alve.umap.res$umap.plot + ggtitle('Alveolata'),
+            nrow = 2, ncol = 2, align = 'hv')
+
+ggsave(umap.plts, filename = 'TCS-OG-Count-UMAP-Plots.pdf',
+       height = 12, width = 16)
+ggsave(umap.plts, filename = 'TCS-OG-Count-UMAP-Plots.png',
+       height = 12, width = 16)
+# Perform some clustering of the count data, independent of the umap embedding
 # To do we we first need to obtain a similarity matrix to assemble into a graph. 
 library(proxy)
-up.og.counts.simil <- simil(up.og.counts.mat[,-1], method = 'correlation')
+chlor.counts.simil <- simil(chlor.umap.res$Log10_CountData[,-1], method = 'correlation')
 
 # Convert this to an adjacency matrix
-up.og.counts.adjac <- 
-  adjacency.fromSimilarity(similarity, 
-                           type = "signed", 
+chlor.counts.adjac <-
+  adjacency.fromSimilarity(chlor.counts.simil,
+                           type = "signed",
                            power = if (type=="distance") 1 else 6)
 
 # Now cluster, using the similarity
-up.og.mcl <- mcl(x = adjacency, addLoops=TRUE, ESM = TRUE)
+chlor.og.mcl <- mcl(x = chlor.counts.adjac, addLoops=TRUE, ESM = TRUE)
 
-# Set some configurations
-umap.defaults$n_neighbors <- 50
-umap.defaults$knn_repeats <- 5
-umap.defaults$metric <- 'euclidean'
-umap.defaults$n_epochs <- 500
-umap.defaults$min_dist <- 0.01
-umap.defaults$negative_sample_rate <- 7.5
-umap.defaults$verbose <- TRUE
+########################################################################
+# Let's similarly re-work the full count matrix for all taxa to remove # 
+# any orthologs that aren't present in at least two specie, and to     #
+# log-transform those data.                                            #
+########################################################################
+# And remove any orthogroup that is only observed in a single species
+single.spp <- c()
+for(og in 1:nrow(up.og.counts.mat)){
+  single.spp[og] <- as.numeric(length(which(up.og.counts.mat[og,-1] > 0)) == 1)
+}
+up.og.counts.mat <- up.og.counts.mat[-which(single.spp == 1),]
 
-up.og.counts.umap <- umap(up.og.counts.mat[,-1], 
-                          config = umap.defaults, 
-                          method = 'umap-learn')
+# Log10 transform to normalize *slightly*
+up.og.log10.counts.mat <- up.og.counts.mat
+opis.log10.counts[,-1] <- log10(opis.counts[,-1]+1)
+
+opis.log10.counts <- opis.counts
+
+
+
+
+
+up.og.log10.counts.mat <- up.og.counts.mat
+up.og.log10.counts.mat[,-1] <- log10(up.og.log10.counts.mat[,-1]+1)
+up.og.counts.umap <- 
 
 #save(up.og.counts.umap, file = 'UniProt-TCS-OG-Count-UMAP-learn.Rds')
-save(up.og.counts.umap, file = 'UniProt-TCS-OG-Count-UMAP-Euclid-50nn-0.01mindis-5knn-500epochs.Rds')
+save(up.og.counts.umap, file = 'UniProt-TCS-OG-Log10-Count-UMAP-Euclid-25nn-0.05mindis-5knn-300epochs.Rds')
 #load(file = 'UniProt-TCS-OG-Count-UMAP-learn.Rds')
 umap.df <- as.data.frame(up.og.counts.umap$layout)
 colnames(umap.df) <- c('UMAP_Axis1', 'UMAP_Axis2')
