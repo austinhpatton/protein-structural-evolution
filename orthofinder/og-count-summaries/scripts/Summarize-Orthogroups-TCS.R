@@ -13,18 +13,28 @@ library(foreach)
 library(umap)
 library(ClusterR)
 library(reticulate)
-setwd('~/Documents/ArcadiaScience/Projects/Protein-SeqStruct-Evolution/TCS/')
+
+# If on laptop:
+basedir <- '~/Documents/ArcadiaScience/Projects/Protein-SeqStruct-Evolution'
+
+# If on home desktop:
+basedir <- '~/ArcadiaScience/Protein-SeqStruct-Evolution/orthofinder/TCS/'
+
+setwd(basedir)
 
 # Read in metadata for samples in the comparative set
-metadat <- 
-  read.table('~/Arcadia Science Dropbox/Austin Patton/Protein-SeqStruct-Evolution/EukProt-V3-Data/EukProt-Taxonomic-Metadata.tsv', 
-             header = T, sep = '\t')
+#metadat <- 
+#  read.table('~/Arcadia Science Dropbox/Austin Patton/Protein-SeqStruct-Evolution/EukProt-V3-Data/EukProt-Taxonomic-Metadata.tsv', 
+#             header = T, sep = '\t')
 
 # Read in the gene counts for each orthogroup, for each sample/species in TCS. 
 counts.mat <- vroom('Orthogroups.GeneCount.tsv', delim = '\t', col_names = T)
-dups.mat <- vroom('./Results_Aug10_1/Comparative_Genomics_Statistics/Duplications_per_Orthogroup.tsv', delim = '\t', col_names = T)
-og.count.mat <- vroom('./Results_Aug10_1/Comparative_Genomics_Statistics/OrthologuesStats_Totals.tsv')
 og.no <- vroom('./Results_Aug10_1/Phylogenetic_Hierarchical_Orthogroups/N0.tsv')
+
+# Summarize gene couts of each N0.HOG for each species. 
+for(hog in 1:length(og.no$HOG)){
+  og.no
+}
 
 # A function to summarize gene counts per orthogroup (e.g. mean, median, SD, SE) for a set of species. 
 summarize_counts <- 
