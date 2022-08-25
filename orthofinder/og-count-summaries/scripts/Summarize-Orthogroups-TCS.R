@@ -205,16 +205,22 @@ format.counts <-
     # Calculate variances of rows, and use to color when plotting
     umap.df$CountVariance <- apply(log10.counts[,-1], var, MARGIN = 1)
     umap.df$Log10CountVariance <- log10(umap.df$CountVariance+1)
+    umap.df$MeanCount <- apply(log10.counts[,-1], mean, MARGIN = 1)
+    umap.df$MinCount <- apply(log10.counts[,-1], min, MARGIN = 1)
+    umap.df$MaxCount <- apply(log10.counts[,-1], max, MARGIN = 1)
+    umap.df$MedianCount <- apply(log10.counts[,-1], median, MARGIN = 1)
+    
     
     umap.plt <-
       ggplot(data = umap.df, aes(x = UMAP_Axis1, y = UMAP_Axis2, 
-                                 color = CountVariance)) + 
-      geom_point(size = 0.75, alpha = 0.15) + 
+                                 color = MedianCount)) + 
+      geom_point(size = 0.75, alpha = 0.5) + 
       scale_color_met_c('Hiroshige', direction = -1) + 
       theme_bw(base_size = 14) + 
       xlab('UMAP Axis 1') +
       ylab('UMAP Axis 2') + 
-      labs(color = "Count\nVariance")
+      labs(color = "Median Log10(Count)") + 
+      theme(legend.position = 'bottom')
     
     results <- list(Log10_CountData = log10.counts,
                     umap = log10.umap,
@@ -233,15 +239,30 @@ umap.config$min_dist <- 0.15
 umap.config$spread <- 1
 umap.config$verbose <- TRUE
 
+umap.config$n_neighbors <- 30
+umap.config$min_dist <- 0.65
 opis.umap.res <- format.counts('Opisthokonta', up.og.counts.mat, umap.config)
-chlor.umap.res <- format.counts('Chloroplastida', up.og.counts.mat, umap.config)
+opis.umap.res$umap.plot
 
-umap.config$min_dist <- 0.05
+umap.config$n_neighbors <- 25
+umap.config$min_dist <- 0.85
+chlor.umap.res <- format.counts('Chloroplastida', up.og.counts.mat, umap.config)
+chlor.umap.res$umap.plot
+
+# umap.config$n_neighbors <- 30
+# umap.config$min_dist <- 0.5
+umap.config$n_neighbors <- 20
+umap.config$min_dist <- 0.95
 alve.umap.res <- format.counts('Alveolata', up.og.counts.mat, umap.config)
 alve.umap.res$umap.plot
 
-umap.config$min_dist <- 0.5
+# umap.config$min_dist <- 0.5
+# all.umap.res <- format.counts('all', up.og.counts.mat, umap.config)
+
+umap.config$n_neighbors <- 30
+umap.config$min_dist <- 0.95
 all.umap.res <- format.counts('all', up.og.counts.mat, umap.config)
+all.umap.res$umap.plot
 # Plot them all together. 
 umap.plts <- 
   plot_grid(all.umap.res$umap.plot + ggtitle('All UniProt TCS'), 
