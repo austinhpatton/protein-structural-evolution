@@ -19,6 +19,7 @@ basedir <- '~/Documents/ArcadiaScience/Projects/Protein-SeqStruct-Evolution'
 
 # If on home desktop:
 basedir <- '~/ArcadiaScience/Protein-SeqStruct-Evolution/orthofinder/TCS/'
+gitdir <- '~/ArcadiaScience/github/protein-structural-evolution/orthofinder/og-count-summaries/'
 
 setwd(basedir)
 
@@ -234,13 +235,13 @@ umap.config$verbose <- TRUE
 
 opis.umap.res <- format.counts('Opisthokonta', up.og.counts.mat, umap.config)
 chlor.umap.res <- format.counts('Chloroplastida', up.og.counts.mat, umap.config)
+
+umap.config$min_dist <- 0.05
 alve.umap.res <- format.counts('Alveolata', up.og.counts.mat, umap.config)
+alve.umap.res$umap.plot
 
-
-umap.config$n_neighbors <- 50
-umap.config$min_dist <- 0.4
+umap.config$min_dist <- 0.5
 all.umap.res <- format.counts('all', up.og.counts.mat, umap.config)
-all.umap.res$umap.plot
 # Plot them all together. 
 umap.plts <- 
   plot_grid(all.umap.res$umap.plot + ggtitle('All UniProt TCS'), 
@@ -249,6 +250,7 @@ umap.plts <-
             alve.umap.res$umap.plot + ggtitle('Alveolata'),
             nrow = 2, ncol = 2, align = 'hv')
 
+setwd(gitdir)
 ggsave(umap.plts, filename = 'TCS-OG-Count-UMAP-Plots.pdf',
        height = 12, width = 16)
 ggsave(umap.plts, filename = 'TCS-OG-Count-UMAP-Plots.png',
