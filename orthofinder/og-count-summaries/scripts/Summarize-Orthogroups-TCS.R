@@ -302,7 +302,7 @@ ggsave(umap.plts, filename = 'TCS-OG-Count-UMAP-Plots.png',
        height = 12, width = 16)
 
 pred.umap <- 
-  function(umap.res, new.dat){
+  function(umap.res, new.dat, umap.config){
     # Project opisthokonts onto the full umap space
     umap.pred <- predict(object = umap.res, data = as.matrix(new.dat[,-1]))
     umap.pred <- data.frame(umap.pred)
@@ -325,6 +325,8 @@ pred.umap <-
       theme_bw(base_size = 14) + 
       xlab('UMAP Axis 1') +
       ylab('UMAP Axis 2') + 
+      ylim(c(min(umap.res$layout[,1]), max(umap.res$layout[,1]))) +
+      xlim(c(min(umap.res$layout[,2]), max(umap.res$layout[,2]))) +
       labs(color = "Count Variance") + 
       theme(legend.position = 'bottom')
     
@@ -352,6 +354,27 @@ ggsave(umap.pred.plts, filename = 'TCS-OG-Count-UMAP-Projection-Plots.pdf',
 ggsave(umap.pred.plts, filename = 'TCS-OG-Count-UMAP-Projection-Plots.png',
        height = 12, width = 16)
 
+comb.preds <- rbind(all.umap.res$umap.df, opis.pred.umap$prediction,
+                    chlor.pred.umap$prediction,alve.pred.umap$prediction)
+comb.preds$set <- c(rep('All', nrow(all.umap.res$umap.df)),
+                    rep('Oposthokonta', nrow(opis.pred.umap$prediction)),
+                    rep('Chloroplastida', nrow(chlor.pred.umap$prediction)),
+                    rep('Alveolata', nrow(alve.pred.umap$prediction)))
+comb.preds$set <- 
+  factor(comb.preds$set, levels = c('All', 'Oposthokonta', 
+                                    'Chloroplastida', 'Alveolata'), 
+         ordered = T)
+
+comb.pred.plt <- 
+  ggplot(data = comb.preds, aes(x = UMAP_Axis1, y = UMAP_Axis2, 
+                               color = set)) + 
+  geom_point(size = 0.75, alpha = 0.5) + 
+  scale_color_met_d('Egypt', direction = -1) + 
+  theme_bw(base_size = 14) + 
+  xlab('UMAP Axis 1') +
+  ylab('UMAP Axis 2') + 
+  labs(color = "Tax-Set") + 
+  theme(legend.position = 'bottom')
 
 # Perform some clustering of the count data, independent of the umap embedding
 # To do we we first need to obtain a similarity matrix to assemble into a graph. 
