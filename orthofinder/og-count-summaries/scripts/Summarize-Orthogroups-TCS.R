@@ -5,7 +5,7 @@ library(reshape)
 library(ape)
 library(vroom)
 library(data.table)
-library(M3C)
+#library(M3C)
 library(MetBrewer)
 library(ggExtra)
 library(cowplot)
@@ -170,6 +170,17 @@ names(tax.sets) <- sup.grps
 # Keep only the supergroups 
 tax.sets <- tax.sets[sapply(tax.sets, nrow) >= 10]
 
+voom <- 
+  function(counts){
+    # Transform each count as a sample-specific transformation
+    for(samp in 1:ncol(counts)){
+      samp.counts <- unlist(c(counts[,samp]))
+      voom <- log2((samp.counts+0.5) / (sum(samp.counts)+1) * 1000000)
+      counts[,samp] <- voom
+    }
+    return(counts)
+  }
+
 # Set up a function to pull out and format the gene count data for any taxonomic group:
 format.counts <- 
   function(taxonomic.group, count.data, umap.config){
@@ -187,43 +198,54 @@ format.counts <-
     # And remove any orthogroup that is present in fewer than two species. 
     counts <- counts[which(rowSums(counts[,-1] > 0) > 1),]
     
-    # Log10 transform to normalize *slightly*
-    log10.counts <- counts
-    log10.counts[,-1] <- log10(counts[,-1]+1)
-    
+    # Prepare for the voom transformation
+    voom.counts <- counts
+    voom.counts[,-1] <- voom(voom.counts[,-1])
+    # # Log10 transform to normalize *slightly*
+    # log10.counts <- counts
+    # log10.counts[,-1] <- log10(counts[,-1]+1)
+    # 
     # Run umap-learn
     # Now go ahead and run UMAP-learn
-    log10.umap <- 
-      umap(log10.counts[,-1], 
+    # log10.umap <- 
+    #   umap(log10.counts[,-1], 
+    #        config = umap.config, 
+    #        method = 'umap-learn')
+    # 
+    umap.config$n_neighbors <- 25
+    umap.config$min_dist <- 0.95
+    voom.umap <- 
+      umap(voom.counts[,-1], 
            config = umap.config, 
            method = 'umap-learn')
-
+    
     # Plot it. 
-    umap.df <- as.data.frame(log10.umap$layout)
+    umap.df <- as.data.frame(voom.umap$layout)
     colnames(umap.df) <- c('UMAP_Axis1', 'UMAP_Axis2')
     
     # Calculate variances of rows, and use to color when plotting
-    umap.df$CountVariance <- apply(log10.counts[,-1], var, MARGIN = 1)
-    umap.df$Log10CountVariance <- log10(umap.df$CountVariance+1)
-    umap.df$MeanCount <- apply(log10.counts[,-1], mean, MARGIN = 1)
-    umap.df$MinCount <- apply(log10.counts[,-1], min, MARGIN = 1)
-    umap.df$MaxCount <- apply(log10.counts[,-1], max, MARGIN = 1)
-    umap.df$MedianCount <- apply(log10.counts[,-1], median, MARGIN = 1)
+    umap.df$CountVariance <- apply(voom.counts[,-1], var, MARGIN = 1)
+    umap.df$Log10CountVariance <- log10(umap.df$CountVariance)
+    umap.df$MeanCount <- apply(voom.counts[,-1], mean, MARGIN = 1)
+    umap.df$MinCount <- apply(voom.counts[,-1], min, MARGIN = 1)
+    umap.df$MaxCount <- apply(voom.counts[,-1], max, MARGIN = 1)
+    umap.df$MedianCount <- apply(voom.counts[,-1], median, MARGIN = 1)
+    umap.df$SD <- apply(voom.counts[,-1], sd, MARGIN = 1)
     
     
     umap.plt <-
       ggplot(data = umap.df, aes(x = UMAP_Axis1, y = UMAP_Axis2, 
-                                 color = MedianCount)) + 
+                                 color = CountVariance)) + 
       geom_point(size = 0.75, alpha = 0.5) + 
       scale_color_met_c('Hiroshige', direction = -1) + 
       theme_bw(base_size = 14) + 
       xlab('UMAP Axis 1') +
       ylab('UMAP Axis 2') + 
-      labs(color = "Median Log10(Count)") + 
+      labs(color = "Count Variance") + 
       theme(legend.position = 'bottom')
     
-    results <- list(Log10_CountData = log10.counts,
-                    umap = log10.umap,
+    results <- list(CountData = voom.counts,
+                    umap = voom.umap,
                     umap.df = umap.df,
                     umap.plot = umap.plt)
     return(results)
@@ -259,10 +281,12 @@ alve.umap.res$umap.plot
 # umap.config$min_dist <- 0.5
 # all.umap.res <- format.counts('all', up.og.counts.mat, umap.config)
 
-umap.config$n_neighbors <- 30
+umap.config$n_neighbors <- 25
 umap.config$min_dist <- 0.95
 all.umap.res <- format.counts('all', up.og.counts.mat, umap.config)
 all.umap.res$umap.plot
+
+
 # Plot them all together. 
 umap.plts <- 
   plot_grid(all.umap.res$umap.plot + ggtitle('All UniProt TCS'), 
@@ -276,6 +300,59 @@ ggsave(umap.plts, filename = 'TCS-OG-Count-UMAP-Plots.pdf',
        height = 12, width = 16)
 ggsave(umap.plts, filename = 'TCS-OG-Count-UMAP-Plots.png',
        height = 12, width = 16)
+
+pred.umap <- 
+  function(umap.res, new.dat){
+    # Project opisthokonts onto the full umap space
+    umap.pred <- predict(object = umap.res, data = as.matrix(new.dat[,-1]))
+    umap.pred <- data.frame(umap.pred)
+    colnames(umap.pred) <- c('UMAP_Axis1', 'UMAP_Axis2')
+    
+    # Calculate variances of rows, and use to color when plotting
+    umap.pred$CountVariance <- apply(new.dat[,-1], var, MARGIN = 1)
+    umap.pred$Log10CountVariance <- log10(umap.pred$CountVariance+1)
+    umap.pred$MeanCount <- apply(new.dat[,-1], mean, MARGIN = 1)
+    umap.pred$MinCount <- apply(new.dat[,-1], min, MARGIN = 1)
+    umap.pred$MaxCount <- apply(new.dat[,-1], max, MARGIN = 1)
+    umap.pred$MedianCount <- apply(new.dat[,-1], median, MARGIN = 1)
+    umap.pred$SD <- apply(new.dat[,-1], sd, MARGIN = 1)
+    
+    umap.pred.plt <- 
+      ggplot(data = umap.pred, aes(x = UMAP_Axis1, y = UMAP_Axis2, 
+                                                  color = CountVariance)) + 
+      geom_point(size = 0.75, alpha = 0.5) + 
+      scale_color_met_c('Hiroshige', direction = -1) + 
+      theme_bw(base_size = 14) + 
+      xlab('UMAP Axis 1') +
+      ylab('UMAP Axis 2') + 
+      labs(color = "Count Variance") + 
+      theme(legend.position = 'bottom')
+    
+    return(list(prediction = umap.pred, plot = umap.pred.plt))
+  }
+
+opis.pred.umap <- 
+  pred.umap(umap.res = all.umap.res$umap, new.dat = opis.umap.res$CountData)
+chlor.pred.umap <- 
+  pred.umap(umap.res = all.umap.res$umap, new.dat = chlor.umap.res$CountData)
+alve.pred.umap <- 
+  pred.umap(umap.res = all.umap.res$umap, new.dat = alve.umap.res$CountData)
+
+# Plot them all together. 
+umap.pred.plts <- 
+  plot_grid(all.umap.res$umap.plot + ggtitle('All UniProt TCS'), 
+            opis.pred.umap$plot + ggtitle('Opisthokonta Projection'), 
+            chlor.pred.umap$plot + ggtitle('Chloroplastida Projection'), 
+            alve.pred.umap$plot + ggtitle('Alveolata Projection'),
+            nrow = 2, ncol = 2, align = 'hv')
+
+setwd(gitdir)
+ggsave(umap.pred.plts, filename = 'TCS-OG-Count-UMAP-Projection-Plots.pdf',
+       height = 12, width = 16)
+ggsave(umap.pred.plts, filename = 'TCS-OG-Count-UMAP-Projection-Plots.png',
+       height = 12, width = 16)
+
+
 # Perform some clustering of the count data, independent of the umap embedding
 # To do we we first need to obtain a similarity matrix to assemble into a graph. 
 library(proxy)
