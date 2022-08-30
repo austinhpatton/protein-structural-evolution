@@ -5,7 +5,7 @@ library(reshape)
 library(ape)
 library(vroom)
 library(data.table)
-library(M3C)
+#library(M3C)
 library(MetBrewer)
 library(ggExtra)
 library(cowplot)
@@ -147,17 +147,22 @@ spps <- sub(tax, pattern = ".*?_", replacement = "")
 tax <- data.frame(CombinedID = tax, Species = spps)
 up.tax <- tax[which(tax$Species %in% up.tax[,1]),]
 
-#up.tax$CombinedID <- paste(up.tax$EukProt_ID, up.tax$Name_to_Use, sep = '_') 
-up.og.counts.mat <- counts.mat[,c(1,which(colnames(counts.mat) %in% up.tax$CombinedID))]
-rm(counts.mat)
-
 # Read in taxonomic metadata. 
 taxonomy <- 
   read.table('~/ArcadiaScience/Protein-SeqStruct-Evolution/EukProt-V3-Data/EukProt-Taxonomic-Metadata.tsv',
              header = T)
 taxonomy <- taxonomy[which(taxonomy$Name_to_Use %in% up.tax$Species),]
 taxonomy$CombinedID <- paste(taxonomy$EukProt_ID, taxonomy$Name_to_Use, sep = "_")
-sup.grps <- unique(taxonomy$Supergroup_UniEuk)
+
+# Pull out the names of supergroups, removing any with only a single species. This will introduce issues downstream. 
+sup.grps <- names(which(summary(factor(taxonomy$Supergroup_UniEuk)) >= 2))
+
+# Only include the count data for these supergroups - otherwise things'll turn out wonky
+keepers <- taxonomy$CombinedID[which(taxonomy$Supergroup_UniEuk %in% sup.grps)]
+
+up.og.counts.mat <- counts.mat[,c(1, which(colnames(counts.mat) %in% keepers))]
+rm(counts.mat)
+
 
 # And pull out the set of species in each supergroup
 tax.sets <- list()
@@ -167,12 +172,20 @@ for(grp in 1:length(sup.grps)){
 }
 names(tax.sets) <- sup.grps
 
-# Keep only the supergroups 
-tax.sets <- tax.sets[sapply(tax.sets, nrow) >= 10]
+voom <- 
+  function(counts){
+    # Transform each count as a sample-specific transformation
+    for(samp in 1:ncol(counts)){
+      samp.counts <- unlist(c(counts[,samp]))
+      voom <- log2((samp.counts+0.5) / (sum(samp.counts)+1) * 1000000)
+      counts[,samp] <- voom
+    }
+    return(counts)
+  }
 
 # Set up a function to pull out and format the gene count data for any taxonomic group:
 format.counts <- 
-  function(taxonomic.group, count.data, umap.config){
+  function(taxonomic.group, count.data, all.tax = T){
     print(paste0("Pulling out counts for ", taxonomic.group))
     if(taxonomic.group != "all"){
       # pull out the counts for the focal taxonomic group. 
@@ -183,61 +196,152 @@ format.counts <-
       counts <- count.data
     }
     
-    
-    # And remove any orthogroup that is present in fewer than two species. 
-    counts <- counts[which(rowSums(counts[,-1] > 0) > 1),]
-    
-    # Log10 transform to normalize *slightly*
-    log10.counts <- counts
-    log10.counts[,-1] <- log10(counts[,-1]+1)
-    
-    # Run umap-learn
-    # Now go ahead and run UMAP-learn
-    log10.umap <- 
-      umap(log10.counts[,-1], 
-           config = umap.config, 
-           method = 'umap-learn')
+    if(all.tax == T){
+      # And remove any orthogroup that is present in fewer than two species. 
+      # Only do this if formatting conts for the full set - we want the data
+      # to be as consistent across taxonomic groups when making predictions.
+      counts <- counts[which(rowSums(counts[,-1] > 0) > 1),]
+    }
 
-    # Plot it. 
-    umap.df <- as.data.frame(log10.umap$layout)
-    colnames(umap.df) <- c('UMAP_Axis1', 'UMAP_Axis2')
-    
-    # Calculate variances of rows, and use to color when plotting
-    umap.df$CountVariance <- apply(log10.counts[,-1], var, MARGIN = 1)
-    umap.df$Log10CountVariance <- log10(umap.df$CountVariance+1)
-    umap.df$MeanCount <- apply(log10.counts[,-1], mean, MARGIN = 1)
-    umap.df$MinCount <- apply(log10.counts[,-1], min, MARGIN = 1)
-    umap.df$MaxCount <- apply(log10.counts[,-1], max, MARGIN = 1)
-    umap.df$MedianCount <- apply(log10.counts[,-1], median, MARGIN = 1)
-    
-    
-    umap.plt <-
-      ggplot(data = umap.df, aes(x = UMAP_Axis1, y = UMAP_Axis2, 
-                                 color = MedianCount)) + 
-      geom_point(size = 0.75, alpha = 0.5) + 
-      scale_color_met_c('Hiroshige', direction = -1) + 
-      theme_bw(base_size = 14) + 
-      xlab('UMAP Axis 1') +
-      ylab('UMAP Axis 2') + 
-      labs(color = "Median Log10(Count)") + 
-      theme(legend.position = 'bottom')
-    
-    results <- list(Log10_CountData = log10.counts,
-                    umap = log10.umap,
-                    umap.df = umap.df,
-                    umap.plot = umap.plt)
-    return(results)
+    # Prepare for the voom transformation
+    voom.counts <- counts
+    voom.counts[,-1] <- voom(voom.counts[,-1])
+  
+    return(CountData = voom.counts)
   }
 
-# Set some configurations
+run.umap <- function(count.set, umap.config){
+  umap.res <-
+    umap(count.set[,-1],
+         config = umap.config,
+         method = 'umap-learn')
+  
+  # Plot it.
+  umap.df <- as.data.frame(umap.res$layout)
+  colnames(umap.df) <- c('UMAP_Axis1', 'UMAP_Axis2')
+  
+  # Calculate variances of rows, and use to color when plotting
+  umap.df$CountVariance <- apply(count.set[,-1], var, MARGIN = 1)
+  umap.df$Log10CountVariance <- log10(umap.df$CountVariance)
+  umap.df$MeanCount <- apply(count.set[,-1], mean, MARGIN = 1)
+  umap.df$MinCount <- apply(count.set[,-1], min, MARGIN = 1)
+  umap.df$MaxCount <- apply(count.set[,-1], max, MARGIN = 1)
+  umap.df$MedianCount <- apply(count.set[,-1], median, MARGIN = 1)
+  umap.df$SD <- apply(count.set[,-1], sd, MARGIN = 1)
+  
+  results <- list(umap = umap.res,
+                  umap.df = umap.df)
+
+  return(results)
+}
+
+pred.umap <- 
+  function(umap.res, taxon.counts){
+    # Project the focal taxon-set onto the full umap space
+    umap.pred <- predict(object = umap.res, data = as.matrix(taxon.counts[,-1]))
+    umap.pred <- data.frame(umap.pred)
+    colnames(umap.pred) <- c('UMAP_Axis1', 'UMAP_Axis2')
+    
+    # Calculate variances of rows, and use to color when plotting
+    umap.pred$CountVariance <- apply(taxon.counts[,-1], var, MARGIN = 1)
+    umap.pred$Log10CountVariance <- log10(umap.pred$CountVariance+1)
+    umap.pred$MeanCount <- apply(taxon.counts[,-1], mean, MARGIN = 1)
+    umap.pred$MinCount <- apply(taxon.counts[,-1], min, MARGIN = 1)
+    umap.pred$MaxCount <- apply(taxon.counts[,-1], max, MARGIN = 1)
+    umap.pred$MedianCount <- apply(taxon.counts[,-1], median, MARGIN = 1)
+    umap.pred$SD <- apply(taxon.counts[,-1], sd, MARGIN = 1)
+
+    return(list(prediction = umap.pred))
+  }
+
+# pull out and transform the count data for the full set, and then for each taxon-set.
+all.counts <- list()
+all.counts[[1]] <- format.counts('all', count.data = up.og.counts.mat)
+for(i in 1:length(tax.sets)){
+  taxon <- names(tax.sets)[i]
+  all.counts[[i+1]] <- format.counts(taxon, count.data = all.counts[[1]], all.tax = F)
+}
+names(all.counts) <- c('all', names(tax.sets))
+
+# Set some configurations in preparation of running UMAP
 umap.config <- umap.defaults
-umap.config$n_neighbors <- 50
+umap.config$n_neighbors <- 25
 umap.config$knn_repeats <- 10
 umap.config$metric <- 'euclidean'
-umap.config$n_epochs <- 1000
-umap.config$min_dist <- 0.15
+umap.config$n_epochs <- 333
+umap.config$min_dist <- 0.95
 umap.config$spread <- 1
 umap.config$verbose <- TRUE
+
+# Run UMAP on all taxa in UniProt
+all.umap.res <- run.umap(all.counts$all, umap.config)
+
+# Plot it
+all.umap.res$umap.plot <-
+  ggplot(data = all.umap.res$umap.df, aes(x = UMAP_Axis1, y = UMAP_Axis2,
+                             color = CountVariance)) +
+  geom_point(size = 0.75, alpha = 0.5) +
+  scale_color_met_c('Hiroshige', direction = -1) +
+  theme_bw(base_size = 14) +
+  xlab('UMAP Axis 1') +
+  ylab('UMAP Axis 2') +
+  labs(color = "Count Variance") +
+  theme(legend.position = 'bottom')
+
+# Now project each taxon-set into this space. 
+tax.umap.projs <- list()
+for(i in 1:length(sup.grps)){
+  taxon <- names(tax.sets)[i]
+  taxa <- tax.sets[[taxon]]$CombinedID
+  
+  print(paste0('Working on projecting ', taxon, '. Hang in there.'))
+  tax.umap.projs[[i]] <- pred.umap(umap.res = all.umap.res$umap, taxon.counts = all.counts[[taxon]])
+}
+names(tax.umap.projs) <- names(tax.sets)
+
+
+# Then build into a big plot. 
+all.umap.proj.res <- all.umap.res$umap.df
+all.umap.proj.res$TaxonSet <- 'All'
+for(i in 1:length(sup.grps)){
+  taxon <- sup.grps[i]
+  taxon.project <- tax.umap.projs[[taxon]]$prediction
+  taxon.project$TaxonSet <- taxon
+  all.umap.proj.res <- rbind(all.umap.proj.res, taxon.project)
+}
+all.umap.proj.res$TaxonSet <- 
+  factor(all.umap.proj.res$TaxonSet, 
+         levels = unique(all.umap.proj.res$TaxonSet)[order(summary(factor(all.umap.proj.res$TaxonSet)), decreasing = T)], 
+         ordered = T)
+
+all.umap.proj.res$PlotOrder <- 0
+to.jitter <- which(all.umap.proj.res$TaxonSet != "All")
+all.umap.proj.res[to.jitter,"PlotOrder"] <- sample(1:11, size = length(to.jitter), replace = T)
+all.umap.proj.res$PlotOrder <- factor(all.umap.proj.res$PlotOrder, levels = 0:11, ordered = T)
+all.umap.proj.res <- all.umap.proj.res[order(all.umap.proj.res$PlotOrder),]
+
+# Now build a single, unified plot
+ggplot(data = all.umap.proj.res[-which(all.umap.proj.res$TaxonSet == 'All'),], 
+       aes(x = UMAP_Axis1, y = UMAP_Axis2,
+           color = TaxonSet)) +
+  geom_point(alpha = 0.5, size = 0.75) +
+  scale_color_manual(values = c('black', met.brewer('Lakota', n = 11, direction = 1))) +
+  theme_bw(base_size = 14) +
+  xlab('UMAP Axis 1') +
+  ylab('UMAP Axis 2') +
+    labs(color = "Taxon Set") +
+  theme(legend.position = 'bottom')
+
+
+
+
+
+
+
+
+
+
+
 
 umap.config$n_neighbors <- 30
 umap.config$min_dist <- 0.65
@@ -259,10 +363,8 @@ alve.umap.res$umap.plot
 # umap.config$min_dist <- 0.5
 # all.umap.res <- format.counts('all', up.og.counts.mat, umap.config)
 
-umap.config$n_neighbors <- 30
-umap.config$min_dist <- 0.95
-all.umap.res <- format.counts('all', up.og.counts.mat, umap.config)
-all.umap.res$umap.plot
+
+
 # Plot them all together. 
 umap.plts <- 
   plot_grid(all.umap.res$umap.plot + ggtitle('All UniProt TCS'), 
@@ -276,6 +378,47 @@ ggsave(umap.plts, filename = 'TCS-OG-Count-UMAP-Plots.pdf',
        height = 12, width = 16)
 ggsave(umap.plts, filename = 'TCS-OG-Count-UMAP-Plots.png',
        height = 12, width = 16)
+
+
+
+# Plot them all together. 
+umap.pred.plts <- 
+  plot_grid(all.umap.res$umap.plot + ggtitle('All UniProt TCS'), 
+            opis.pred.umap$plot + ggtitle('Opisthokonta Projection'), 
+            chlor.pred.umap$plot + ggtitle('Chloroplastida Projection'), 
+            alve.pred.umap$plot + ggtitle('Alveolata Projection'),
+            nrow = 2, ncol = 2, align = 'hv')
+
+setwd(gitdir)
+ggsave(umap.pred.plts, filename = 'TCS-OG-Count-UMAP-Projection-Plots.pdf',
+       height = 12, width = 16)
+ggsave(umap.pred.plts, filename = 'TCS-OG-Count-UMAP-Projection-Plots.png',
+       height = 12, width = 16)
+
+comb.preds <- rbind(all.umap.res$umap.df, opis.pred.umap$prediction,
+                    chlor.pred.umap$prediction,alve.pred.umap$prediction)
+comb.preds$set <- c(rep('All', nrow(all.umap.res$umap.df)),
+                    rep('Oposthokonta', nrow(opis.pred.umap$prediction)),
+                    rep('Chloroplastida', nrow(chlor.pred.umap$prediction)),
+                    rep('Alveolata', nrow(alve.pred.umap$prediction)))
+comb.preds$set <- 
+  factor(comb.preds$set, levels = c('All', 'Oposthokonta', 
+                                    'Chloroplastida', 'Alveolata'), 
+         ordered = T)
+
+comb.pred.plt <- 
+  ggplot(data = comb.preds, aes(x = UMAP_Axis1, y = UMAP_Axis2, 
+                               color = set)) + 
+  geom_point(size = 0.75, alpha = 0.5) + 
+  scale_color_met_d('Egypt', direction = -1) + 
+  theme_bw(base_size = 14) + 
+  guides(colour = guide_legend(override.aes = 
+                                 list(size=3))) +
+  xlab('UMAP Axis 1') +
+  ylab('UMAP Axis 2') + 
+  labs(color = "Tax-Set") + 
+  theme(legend.position = 'bottom')
+
 # Perform some clustering of the count data, independent of the umap embedding
 # To do we we first need to obtain a similarity matrix to assemble into a graph. 
 library(proxy)
