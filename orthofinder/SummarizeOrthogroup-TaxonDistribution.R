@@ -1,7 +1,7 @@
 # Summaries of orthogroups and comparative genomic statistics for The Comparative SeT
 # as inferred using OrthoFinder
 library(tidyverse)
-library(reshape2)
+library(reshape)
 library(ape)
 library(vroom)
 library(data.table)
@@ -22,7 +22,12 @@ basedir <- '~/ArcadiaScience/Protein-SeqStruct-Evolution/orthofinder/TCS/'
 gitdir <- '~/ArcadiaScience/github/protein-structural-evolution/orthofinder/'
 
 setwd(gitdir)
+source('ArcadiaColorBrewer.R')
 
+# A General plotting function to generate many discrete colors
+getPalette = colorRampPalette(RColorBrewer::brewer.pal(9, "Set1"))
+
+# Read in the summaries
 spp.per.og <- read_tsv(paste0(gitdir, 'og_taxonomy_genecount_summaries/NumSpecies_PerSupergroup_InOGs.tsv'))
 count.per.og <- read_tsv(paste0(gitdir, 'og_taxonomy_genecount_summaries/NumGeneCopies_PerSupergroup-InOGs.tsv'))
 prop.count.per.og <- read_tsv(paste0(gitdir, 'og_taxonomy_genecount_summaries/PropTotalGeneCopies_PerSupergroup-InOGs.tsv'))
@@ -50,40 +55,44 @@ spp.per.og.plt <-
 
 # Summarize how many orthogroups include each number of species
 spp.og.hist.dat <- data.frame(NumSppInOG = unique(factor(spp.per.og$NumSppInOG)),
-                              NumOGs = NA)
+                              NumOGs = NA, NumGrps = NA)
 spp.og.hist.dat <- spp.og.hist.dat[order(spp.og.hist.dat$NumSppInOG),]
 for(i in 1:196){
   spp.og.hist.dat$NumOGs[i] <- length(which(spp.per.og$NumSppInOG == i))
+  spp.og.hist.dat$NumGrps[i] <- mean(spp.per.og$NumGrps[which(spp.per.og$NumSppInOG == i)])
+  
 }
 spp.og.hist.dat$NumSppInOG <- as.numeric(spp.og.hist.dat$NumSppInOG)
 spp.per.og.hist <- 
   ggplot(data = spp.og.hist.dat, 
          aes(x = NumSppInOG, 
              y = NumOGs, 
-             fill = NumSppInOG)) + 
+             fill = NumGrps)) + 
   geom_point(pch = 21, alpha = 0.8, size = 3) +
   scale_y_log10() +
   annotation_logticks(sides = 'l') + 
   scale_fill_viridis_c(option = 'B') +
   xlab("# of Species in OG") +
-  ylab("Total # of Gene Copies") +
+  ylab("# of Orthogroups") +
   theme_bw(base_size = 14) +
-  labs(fill = "# of Species") +
+  labs(fill = "# of Supergroups in OG") +
   theme(legend.position = 'top')
 
 # Summarize how many orthogroups include each number of supergroups
 grp.og.hist.dat <- data.frame(NumGrpsInOG = unique(factor(spp.per.og$NumGrps)),
-                              NumOGs = NA)
+                              NumOGs = NA, NumSppInOG = NA)
 grp.og.hist.dat <- grp.og.hist.dat[order(grp.og.hist.dat$NumGrpsInOG),]
 for(i in 1:31){
   grp.og.hist.dat$NumOGs[i] <- length(which(spp.per.og$NumGrps == i))
+  grp.og.hist.dat$NumSppInOG[i] <- mean(spp.per.og$NumSppInOG[which(spp.per.og$NumGrps == i)])
+  
 }
 grp.og.hist.dat$NumGrpsInOG <- as.numeric(grp.og.hist.dat$NumGrpsInOG)
 grp.per.og.hist <- 
   ggplot(data = grp.og.hist.dat, 
          aes(x = NumGrpsInOG, 
              y = NumOGs, 
-             fill = NumGrpsInOG)) + 
+             fill = NumSppInOG)) + 
   geom_point(pch = 21, alpha = 0.8, size = 3) +
   scale_y_log10() +
   annotation_logticks(sides = 'l') + 
@@ -91,7 +100,7 @@ grp.per.og.hist <-
   xlab("# of Supergroups in OG") +
   ylab("# of Orthogroups") +
   theme_bw(base_size = 14) +
-  labs(fill = "# of Supergroups") +
+  labs(fill = "# of Species in OG") +
   theme(legend.position = 'top')
 
 # The relationship between number of gene copies, and the number of supergroups in that orthogroup 
@@ -118,7 +127,7 @@ ogs.per.grp.plt <-
   theme_bw(base_size = 14) + 
   xlab("Supergroup") +
   ylab("Number of OGs") + 
-  scale_color_viridis_d(option = 'B') +
+  scale_fill_manual(values = getPalette(31)) +
   labs(fill = "Supergroup") +
   theme(legend.position = 'none', 
         axis.text.x = element_text(angle = 45, hjust = 1),
@@ -161,13 +170,14 @@ cum.dist.og.size <-
 cum.dist.og.size.all <- cum.dist.og.size[which(cum.dist.og.size$variable == 'PercentOfAllProteins'),]
 cum.dist.og.size <- cum.dist.og.size[-which(cum.dist.og.size$variable == 'PercentOfAllProteins'),]
 
-getPalette = colorRampPalette(RColorBrewer::brewer.pal(9, "Set1"))
 
 og.spp.inclusion.plt <- 
   ggplot(data = cum.dist.og.size, aes(x = NumSppInOG, y = value, color = variable)) + 
   geom_line(size = 1.5) + 
   geom_line(data = cum.dist.og.size.all, aes(x = NumSppInOG, y = value),
             size = 3, color = 'black') + 
+  geom_vline(xintercept = 5, color = 'blue', lty = 2, size = 1, alpha = 0.5) +
+  geom_vline(xintercept = 10, color = 'red', lty = 2, size = 1, alpha = 0.5) +
   scale_x_reverse() + 
   xlab('Cumul. Prop. of Orthologs') +
   ylab('Number of Species in Orthogroup') +
@@ -176,7 +186,117 @@ og.spp.inclusion.plt <-
   theme(legend.position = 'top') +
   labs(color = "Supergroup")
 
+
 ggsave(og.spp.inclusion.plt, file = 'CumulDist-PropOrthologsIn-N-SppOGs.pdf', 
        height = 8, width = 10)
 ggsave(og.spp.inclusion.plt, file = 'CumulDist-PropOrthologsIn-N-SppOGs.png', 
        height = 8, width = 10, dpi = 600)
+
+# And another plot of the # of OGs included for each supergroup when using cutoffs of 4 or 10 spp per og. 
+og.cutoff.effect.per.grp <- 
+  data.frame(Supergroup = unique(cum.dist.og.size$variable),
+             UniqueSpp_Cut4 = NA, 
+             UniqueSpp_Cut10 = NA)
+
+grps <- unique(cum.dist.og.size$variable)
+for(grp in 1:length(grps)){
+  grp.props <- cum.dist.og.size[which(cum.dist.og.size$variable == grps[grp]),]
+  og.cutoff.effect.per.grp$UniqueSpp_Cut4[grp] <- 
+    grp.props$value[which(grp.props$NumSppInOG == 4)]
+  og.cutoff.effect.per.grp$UniqueSpp_Cut10[grp] <- 
+    grp.props$value[which(grp.props$NumSppInOG == 10)]
+}
+
+# Reorder to be increasing
+og.cutoff.effect.per.grp$Rank <- rank(og.cutoff.effect.per.grp$UniqueSpp_Cut4)
+og.cutoff.effect.per.grp <- melt(og.cutoff.effect.per.grp, id.vars = c('Supergroup', 'Rank'))
+og.cutoff.effect.per.grp <- 
+  og.cutoff.effect.per.grp[order(og.cutoff.effect.per.grp$Rank),]
+og.cutoff.effect.per.grp$Supergroup <- 
+  factor(og.cutoff.effect.per.grp$Supergroup, 
+         levels = unique(og.cutoff.effect.per.grp$Supergroup[order(og.cutoff.effect.per.grp$Rank)]))
+
+og.cutoff.effect.per.grp.plt <- 
+  ggplot(data = og.cutoff.effect.per.grp,
+         aes(x = Supergroup, y = value, fill = variable)) + 
+  geom_point(pch = 21, size = 3) + 
+  scale_fill_manual(values = unname(arcadia.pal(n = 3, name = 'Accent'))) +
+  theme_bw(base_size = 14) + 
+  xlab("Supergroup") +
+  ylab("Proportion of OGs\nRetained at Cutoff") + 
+  labs(fill = "Cutoff") +
+  theme(legend.position = 'none', 
+        axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.title.x = element_blank())
+
+ggsave(og.cutoff.effect.per.grp.plt,
+       file = 'PropOGs_Retained_PerCutoff_PerSupergroup.pdf',
+       height = 6, width = 6)
+ggsave(og.cutoff.effect.per.grp.plt,
+       file = 'PropOGs_Retained_PerCutoff_PerSupergroup.png',
+       height = 6, width = 6, dpi = 600)
+
+####################################################################
+# Run UMAP
+
+run.umap <- function(count.set, umap.config, is.prop = F){
+  if(is.prop == F){
+    count.set[,-1] <- center_scale(count.set[,-1])
+  }
+  umap.res <-
+    umap(count.set[,-1],
+         config = umap.config,
+         method = 'umap-learn')
+  
+  # Plot it.
+  umap.df <- as.data.frame(umap.res$layout)
+  colnames(umap.df) <- c('UMAP_Axis1', 'UMAP_Axis2')
+  
+  # Calculate variances of rows, and use to color when plotting
+  umap.df$CountVariance <- apply(count.set[,-1], var, MARGIN = 1)
+  umap.df$Log10CountVariance <- log10(umap.df$CountVariance)
+  umap.df$MeanCount <- apply(count.set[,-1], mean, MARGIN = 1)
+  umap.df$MinCount <- apply(count.set[,-1], min, MARGIN = 1)
+  umap.df$MaxCount <- apply(count.set[,-1], max, MARGIN = 1)
+  umap.df$MedianCount <- apply(count.set[,-1], median, MARGIN = 1)
+  umap.df$SD <- apply(count.set[,-1], sd, MARGIN = 1)
+  
+  results <- list(umap = umap.res,
+                  umap.df = umap.df)
+  
+  return(results)
+}
+
+umap.config <- umap.defaults
+umap.config$n_neighbors <- 25
+#umap.config$knn_repeats <- 10
+#umap.config$metric <- 'euclidean'
+umap.config$n_epochs <- 1000
+umap.config$min_dist <- 0.25
+umap.config$spread <- 1.75
+#umap.config$verbose <- TRUE
+
+# Umap using the cutoff of ten species minimum per orthogroup
+core.counts <- count.per.og[which(count.per.og$NumSppInOG >= 10),]
+per.tax.count.umap <- 
+  run.umap(core.counts[,-c(2:3)], umap.config)
+per.tax.count.umap$umap.plot <-
+  ggplot(data = per.tax.count.umap$umap.df, aes(x = UMAP_Axis1, y = UMAP_Axis2,
+                                          color = core.counts$NumSppInOG)) +
+  geom_point(size = 0.75, alpha = 0.5) +
+  scale_color_met_c('Hiroshige', direction = -1) +
+  theme_bw(base_size = 14) +
+  xlab('UMAP Axis 1') +
+  ylab('UMAP Axis 2') +
+  labs(color = "Number of Species\nin Orthogroup") +
+  theme(legend.position = 'bottom')
+per.tax.count.umap$umap.plot
+
+ggsave(per.tax.count.umap$umap.plot,
+       file = "PerSupergroup_GeneCount_UMAP.pdf",
+       height = 8, width = 8)
+ggsave(per.tax.count.umap$umap.plot,
+       file = "PerSupergroup_GeneCount_UMAP.png",
+       height = 8, width = 8)
+
+
