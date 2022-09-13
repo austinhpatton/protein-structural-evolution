@@ -135,10 +135,16 @@ spp.tree$tip.label <- paste(arpc5.single.prots$Taxon, arpc5.single.prots$Entry, 
 arpc5.single.prots <- arpc5.single.prots[match(rownames(sc.arpc5), arpc5.single.prots$Entry),]
 rownames(sc.arpc5) <- paste(arpc5.single.prots$Taxon, arpc5.single.prots$Entry, sep = "_")
 
+# And sort the shapemers to be in order of the tips in the tree.
+sc.arpc5 <- sc.arpc5[match(spp.tree$tip.label, rownames(sc.arpc5)),]
+
 # And run the pPCA!
-arpc5.ppca <- phyl.pca(spp.tree, sc.arpc5, method="BM", mode="cov")
+arpc5.ppca <- phyl.pca(spp.tree, sc.arpc5, method="BM", mode="corr")
 
 # Write the shapemers and results of pPCA out to file
 write.table(sc.arpc5, file = 'SingleCopy-ARPC5-Shapemers.tsv', 
             sep = '\t', quote = F, row.names = T, col.names = T)
 saveRDS(arpc5.ppca, file = "SingleCopy-ARPC5-Shapemer-phyloPCA.RDS") 
+
+# Also just run a normal PCA to explore what's driving the pattern of PCs 
+# primarily explaining differences between closely related pairs of species. 
