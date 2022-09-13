@@ -1,0 +1,99 @@
+Starting optimizeGeneTreesSlave
+LibpllModel /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002061-clipkit_fa/OG0002061-clipkit_fa.raxml.bestModel
+Starting optimizing gene tree
+Number of ranks 1
+(0.2, 0.2, 0.2, score = 0)
+Taxa number: 304
+Start optimizing DTL rates
+joint: -120877  libpll: -119956  reconciliation: -920.365  
+Initial ll = -120877
+
+SPR Search with radius 1: trying 906 prune nodes
+Found 78 potential better moves
+	GeneRax will now test and apply all the 78 potential good moves one after each other
+	Applying move, ll = -120876, 335 345
+	Worse likelihood, Move rejected
+	Applying move, ll = -120876, 364 30
+	Applying move, ll = -120874, 380 386
+	Applying move, ll = -120873, 389 443
+	Worse likelihood, Move rejected
+	Applying move, ll = -120871, 533 540
+	Applying move, ll = -120870, 541 69
+	Applying move, ll = -120866, 659 655
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying move, ll = -120865, 740 797
+	Applying move, ll = -120860, 770 760
+	Applying move, ll = -120858, 815 822
+	Applying move, ll = -120851, 824 831
+	Applying move, ll = -120848, 1010 1015
+	Applying move, ll = -120842, 1055 264
+	Applying move, ll = -120840, 1058 263
+	Applying move, ll = -120830, 1064 1071
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying move, ll = -120828, 1148 294
+
+SPR Search with radius 1: trying 906 prune nodes
+Found 47 potential better moves
+	GeneRax will now test and apply all the 47 potential good moves one after each other
+	Applying move, ll = -120828, 338 331
+	Applying move, ll = -120823, 344 442
+	Applying move, ll = -120819, 379 393
+	Worse likelihood, Move rejected
+	Applying move, ll = -120817, 521 533
+	Applying move, ll = -120815, 542 496
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying move, ll = -120815, 737 742
+	Applying move, ll = -120812, 1009 1012
+	Applying move, ll = -120810, 1055 263
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying move, ll = -120809, 1142 1151
+
+SPR Search with radius 1: trying 906 prune nodes
+Found 28 potential better moves
+	GeneRax will now test and apply all the 28 potential good moves one after each other
+	Applying move, ll = -120809, 338 16
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying move, ll = -120809, 451 336
+	Applying move, ll = -120807, 497 545
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying move, ll = -120804, 737 733
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+
+SPR Search with radius 1: trying 906 prune nodes
+Found 24 potential better moves
+	GeneRax will now test and apply all the 24 potential good moves one after each other
+	Applying move, ll = -120796, 344 448
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying move, ll = -120795, 737 742
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+
+SPR Search with radius 1: trying 906 prune nodes
+Found 16 potential better moves
+	GeneRax will now test and apply all the 16 potential good moves one after each other
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+joint: -120795  libpll: -119997  reconciliation: -797.929  
+Saving tree in SpeciesRax/results/OG0002061/geneTree.newick
+Finished saving  SpeciesRax/results/OG0002061/geneTree.newick
+End of optimizing gene tree after 210s
+End of optimizeGeneTreesSlave

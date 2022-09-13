@@ -1,0 +1,174 @@
+Starting optimizeGeneTreesSlave
+LibpllModel /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001972-clipkit_fa/OG0001972-clipkit_fa.raxml.bestModel
+Starting optimizing gene tree
+Number of ranks 1
+(0.2, 0.2, 0.2, score = 0)
+Taxa number: 313
+Start optimizing DTL rates
+joint: -52371.9  libpll: -51232.6  reconciliation: -1139.28  
+Initial ll = -52371.9
+
+SPR Search with radius 1: trying 933 prune nodes
+Found 143 potential better moves
+GeneRax will try to apply them chunk by chunk...
+	Applying a chunk of 10 potential good moves simultaneously...
+	After applying the chunk of moves, ll = -52368
+	GeneRax will now test and apply all the 4 potential good moves one after each other
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying a chunk of 10 potential good moves simultaneously...
+	Worse likelihood (-52375.5)! Rollbacking all moves! -52375.5
+	GeneRax will now test and apply all the 10 potential good moves one after each other
+	Applying move, ll = -52367.4, 455 462
+	Applying move, ll = -52367.1, 509 578
+	Applying a chunk of 10 potential good moves simultaneously...
+	After applying the chunk of moves, ll = -52355.8
+	GeneRax will now test and apply all the 3 potential good moves one after each other
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying a chunk of 10 potential good moves simultaneously...
+	Worse likelihood (-52356.2)! Rollbacking all moves! -52356.2
+	GeneRax will now test and apply all the 10 potential good moves one after each other
+	Applying move, ll = -52351.3, 551 560
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying move, ll = -52345.1, 566 573
+	Applying a chunk of 10 potential good moves simultaneously...
+	Worse likelihood (-52350.2)! Rollbacking all moves! -52350.2
+	GeneRax will now test and apply all the 10 potential good moves one after each other
+	Worse likelihood, Move rejected
+	Applying move, ll = -52337.8, 578 93
+	Applying move, ll = -52337.3, 617 632
+	Applying a chunk of 10 potential good moves simultaneously...
+	Worse likelihood (-52345.9)! Rollbacking all moves! -52345.9
+	GeneRax will now test and apply all the 10 potential good moves one after each other
+	Applying move, ll = -52336.7, 626 633
+	Applying move, ll = -52335.9, 641 647
+	Applying a chunk of 10 potential good moves simultaneously...
+	After applying the chunk of moves, ll = -52332.7
+	GeneRax will now test and apply all the 5 potential good moves one after each other
+	Applying move, ll = -52327.5, 648 670
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying a chunk of 10 potential good moves simultaneously...
+	Worse likelihood (-52347.3)! Rollbacking all moves! -52347.3
+	GeneRax will now test and apply all the 10 potential good moves one after each other
+	Applying move, ll = -52326.8, 764 877
+	Applying move, ll = -52325, 767 796
+	Applying move, ll = -52324.7, 794 781
+	Applying a chunk of 10 potential good moves simultaneously...
+	After applying the chunk of moves, ll = -52323.3
+	GeneRax will now test and apply all the 2 potential good moves one after each other
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying a chunk of 10 potential good moves simultaneously...
+	Worse likelihood (-52335.6)! Rollbacking all moves! -52335.6
+	GeneRax will now test and apply all the 10 potential good moves one after each other
+	Applying move, ll = -52322.2, 924 210
+	Worse likelihood, Move rejected
+	Applying move, ll = -52321.9, 932 946
+	Applying move, ll = -52317.9, 950 967
+	Applying a chunk of 10 potential good moves simultaneously...
+	After applying the chunk of moves, ll = -52316.3
+	GeneRax will now test and apply all the 4 potential good moves one after each other
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying a chunk of 10 potential good moves simultaneously...
+	Worse likelihood (-52318.5)! Rollbacking all moves! -52318.5
+	GeneRax will now test and apply all the 10 potential good moves one after each other
+	Applying move, ll = -52315.5, 1043 1123
+	Applying move, ll = -52310.9, 1061 1067
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying a chunk of 10 potential good moves simultaneously...
+	Worse likelihood (-52353.9)! Rollbacking all moves! -52353.9
+	GeneRax will now test and apply all the 10 potential good moves one after each other
+	Worse likelihood, Move rejected
+	Applying move, ll = -52310.2, 1142 281
+	Worse likelihood, Move rejected
+	Applying move, ll = -52307.8, 1157 1163
+	Applying a chunk of 10 potential good moves simultaneously...
+	Worse likelihood (-52308.2)! Rollbacking all moves! -52308.2
+	GeneRax will now test and apply all the 10 potential good moves one after each other
+	Worse likelihood, Move rejected
+	Applying move, ll = -52304.7, 1193 1200
+	Applying a chunk of 3 potential good moves simultaneously...
+	Worse likelihood (-52307.6)! Rollbacking all moves! -52307.6
+	GeneRax will now test and apply all the 3 potential good moves one after each other
+	Worse likelihood, Move rejected
+
+SPR Search with radius 1: trying 933 prune nodes
+Found 67 potential better moves
+	GeneRax will now test and apply all the 67 potential good moves one after each other
+	Applying move, ll = -52302.8, 355 352
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying move, ll = -52297.8, 625 636
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying move, ll = -52293.5, 700 745
+	Worse likelihood, Move rejected
+	Applying move, ll = -52291.2, 761 905
+	Applying move, ll = -52289.7, 791 797
+	Applying move, ll = -52289.3, 902 1142
+	Applying move, ll = -52286.9, 922 932
+	Worse likelihood, Move rejected
+	Applying move, ll = -52284.7, 1022 241
+	Applying move, ll = -52282.7, 1024 1038
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying move, ll = -52279.8, 1112 1120
+	Applying move, ll = -52279.8, 1144 281
+	Applying move, ll = -52277.2, 1211 1174
+
+SPR Search with radius 1: trying 933 prune nodes
+Found 32 potential better moves
+	GeneRax will now test and apply all the 32 potential good moves one after each other
+	Applying move, ll = -52275, 356 428
+	Applying move, ll = -52273.9, 617 106
+	Applying move, ll = -52270.6, 701 755
+	Applying move, ll = -52261.1, 782 787
+	Applying move, ll = -52258.2, 932 1139
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying move, ll = -52258.1, 1106 1078
+	Applying move, ll = -52257.1, 1199 300
+
+SPR Search with radius 1: trying 933 prune nodes
+Found 26 potential better moves
+	GeneRax will now test and apply all the 26 potential good moves one after each other
+	Worse likelihood, Move rejected
+	Applying move, ll = -52256.8, 362 417
+	Applying move, ll = -52256.8, 412 406
+	Applying move, ll = -52256.1, 427 352
+	Applying move, ll = -52251.7, 700 152
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying move, ll = -52251.1, 1103 1124
+	Applying move, ll = -52250.7, 1110 266
+
+SPR Search with radius 1: trying 933 prune nodes
+Found 16 potential better moves
+	GeneRax will now test and apply all the 16 potential good moves one after each other
+	Applying move, ll = -52250.4, 422 357
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying move, ll = -52250.2, 1105 266
+
+SPR Search with radius 1: trying 933 prune nodes
+Found 8 potential better moves
+	GeneRax will now test and apply all the 8 potential good moves one after each other
+	Worse likelihood, Move rejected
+	Worse likelihood, Move rejected
+	Applying move, ll = -52249.7, 1103 1108
+joint: -52249.7  libpll: -51335.8  reconciliation: -913.945  
+Saving tree in SpeciesRax/results/OG0001972/geneTree.newick
+Finished saving  SpeciesRax/results/OG0001972/geneTree.newick
+End of optimizing gene tree after 246s
+End of optimizeGeneTreesSlave

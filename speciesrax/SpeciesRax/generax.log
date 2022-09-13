@@ -1,0 +1,267 @@
+GeneRax was called as follow:
+/home/ubuntu/environment/software/GeneRax/build/bin/generax --families /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG.families --strategy SPR --si-strategy HYBRID --species-tree MiniNJ --rec-model UndatedDTL --per-family-rates --prune-species-tree --si-estimate-bl --si-spr-radius 5 --max-spr-radius 5 --si-quartet-support --prefix SpeciesRax 
+
+General information:
+- Output prefix: SpeciesRax
+- Families information: /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG.families
+- Species tree: MiniNJ
+- You are running GeneRax without MPI (no parallelization)
+- Random seed: 123
+- Reconciliation model: UndatedDTL
+- DTL rates: per family rates
+- Infer ML reconciliation: ON
+- Unrooted reconciliation likelihood: OFF
+- Prune species tree mode: ON
+
+Species tree inference information:
+- Species tree Strategy: HYBRID
+- Quartet branch supports estimation: ON
+- Branch length estimationON
+- SPR radius: 5
+
+Gene tree correction information:
+- Gene tree search strategy: SPR
+- Max gene SPR radius: 5
+
+[00:00:00] Filtering invalid families...
+
+Error in family OG0001476: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001486: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001526: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001566: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001612: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001627: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001668: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001681: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001695: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001734: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001767: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001801: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001817: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001826: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001867: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001870: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001874: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001945: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001952: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001954: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001956: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002005: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002034: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002045: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002103: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002105: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002122: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002128: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002162: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002185: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002198: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002209: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002214: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002222: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002298: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002299: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002319: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002322: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002323: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002325: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002351: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002389: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002390: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002398: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002411: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002428: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002441: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002445: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002477: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002524: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002656: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002666: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002671: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002694: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002698: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002738: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002841: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002849: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002905: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002925: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002969: Cannot read alignment file (file exists but is invalid)
+Error in family OG0003044: Cannot read alignment file (file exists but is invalid)
+Error in family OG0003619: Cannot read alignment file (file exists but is invalid)
+WARNING!!! Found 63 invalid families (they will be discarded from the analysis)
+End of instance initialization
+[00:00:00] Starting species tree initialization...
+[00:00:01] End of species tree initialization
+[00:00:01] Filtering invalid families based on the starting species tree...
+
+[00:00:02] Gathering statistics about the families...
+[00:00:02] Input data information:
+- Number of gene families: 108
+- Number of species: 196
+- Total number of genes: 33303
+- Average number of genes per family: 308
+- Maximum number of genes per family: 384
+- Species covered with the smallest family coverage: "Eucheuma_denticulatum" (covered by 68/108 families)
+- Average (over species) species family coverage: 100
+
+Saving tree to SpeciesRax/species_trees/inferred_species_tree.newick
+
+[00:00:04] Start optimizing the species tree with fixed gene trees (on 108 families 
+
+[00:00:46] [Species search] Root search with depth=3
+[00:00:46] [Species search] Root search with depth=3
+Found better root -129084
+Found better root -129070
+Found better root -129068
+Found better root -129065
+Found better root -129038
+[00:04:09] [Species search] After root search: LL=-129038
+[00:04:09] [Species search] After root search: LL=-129214
+
+[00:04:09] [Species search] Starting species tree transfer-guided search, bestLL=-129038, hash=73736)
+WARNING, CREATING FILE yoyo.txt
+[00:04:58] [Species search] Start new transfer-guided round. Inferred transfers:9542
+[00:05:01] 	better tree (transfers:0.317924, trial: 2, ll=-128770, hash=37435) Lapot_gusevi -> Bodo_saltans
+[00:05:12] 	better tree (transfers:0.282408, trial: 3, ll=-128686, hash=1726) Madagascaria_erythrocladioides -> Porphyridium_aerugineum
+[00:05:32] 	better tree (transfers:0.179222, trial: 10, ll=-128668, hash=8894) Monocercomonoides_exilis -> Paratrimastix_pyriformis
+[00:05:34] 	better tree (transfers:0.151977, trial: 13, ll=-128320, hash=38718) Nonionella_stella -> Reticulomyxa_filosa
+[00:05:37] 	better tree (transfers:0.151442, trial: 15, ll=-128281, hash=63096) Mataza_sp_D1 -> Brevimastigomonas_motovehiculus
+[00:05:41] 	better tree (transfers:0.124986, trial: 24, ll=-128245, hash=72488) Batrachochytrium_dendrobatidis -> Paraphelidium_tribonemae
+[00:05:43] 	found better* (LL=-128236, hash=75384)
+[00:05:44] 	found better* (LL=-128233, hash=27064)
+[00:05:49] 	better tree (transfers:0.117122, trial: 28, ll=-128161, hash=47604) Gregarina_niphandrodes -> node_134
+[00:05:52] 	better tree (transfers:0.113806, trial: 29, ll=-128151, hash=34813) Caenorhabditis_elegans -> Capitella_teleta
+[00:05:55] 	better tree (transfers:0.111812, trial: 31, ll=-128115, hash=67282) Percolomonas_sp_WS -> Neovahlkampfia_damariscottae
+[00:05:57] 	found better* (LL=-128057, hash=26606)
+[00:05:59] 	better tree (transfers:0.110088, trial: 34, ll=-128002, hash=35782) Salpingoeca_kvevrii -> Diaphanoeca_grandis
+[00:06:04] 	better tree (transfers:0.0957887, trial: 45, ll=-127930, hash=85154) node_32 -> Phaeocystis_rex
+[00:06:08] 	better tree (transfers:0.0825043, trial: 56, ll=-127826, hash=19604) Ciona_intestinalis -> node_66
+[00:06:16] 	better tree (transfers:0.0656108, trial: 85, ll=-127740, hash=18125) node_68 -> Capitella_teleta
+[00:06:17] 	found better* (LL=-127706, hash=97910)
+[00:06:20] 	better tree (transfers:0.0623049, trial: 92, ll=-127537, hash=79150) node_154 -> Aureococcus_anophagefferens
+[00:06:23] 	better tree (transfers:0.0615402, trial: 95, ll=-127382, hash=71278) Fonticula_alba -> Parvularia_atlantis
+[00:06:27] 	better tree (transfers:0.0603712, trial: 101, ll=-127328, hash=78350) Syssomonas_multiformis -> Sphaerothecum_destruens
+[00:06:30] 	found better* (LL=-127309, hash=32054)
+[00:06:32] 	found better* (LL=-127267, hash=40430)
+[00:06:37] 	better tree (transfers:0.0579116, trial: 112, ll=-127245, hash=40682) Oxyrrhis_marina -> Perkinsus_marinus
+[00:06:38] 	found better* (LL=-127145, hash=8526)
+[00:06:41] 	better tree (transfers:0.0572848, trial: 115, ll=-127130, hash=77088) Filamoeba_sp_ATCC50430 -> Dictyostelium_discoideum
+[00:06:44] 	better tree (transfers:0.0563356, trial: 118, ll=-126806, hash=30417) node_109 -> node_120
+[00:06:50] 	better tree (transfers:0.0530145, trial: 135, ll=-126778, hash=7470) node_137 -> Gregarina_niphandrodes
+[00:06:58] 	better tree (transfers:0.0479534, trial: 161, ll=-126757, hash=68138) Blastocystis_sp_subtype4-isolateWR1 -> MAST-03A_sp_MAST-3A-sp1
+WARNING, CREATING FILE yoyo.txt
+[00:07:16] [Species search] Start new transfer-guided round. Inferred transfers:9214
+[00:07:22] 	better tree (transfers:0.128996, trial: 23, ll=-126701, hash=24822) node_168 -> Mataza_sp_D1
+[00:07:30] 	better tree (transfers:0.0878575, trial: 55, ll=-126665, hash=74178) Caenorhabditis_elegans -> Mnemiopsis_leidyi
+WARNING, CREATING FILE yoyo.txt
+[00:08:01] [Species search] Start new transfer-guided round. Inferred transfers:9225
+[00:08:36] [Species search] After transfer search: LL=-126665
+[00:08:36] After normal search: LL=-126665
+
+[00:08:36] [Species search] Root search with depth=3
+[00:08:36] [Species search] Root search with depth=3
+[00:08:57] [Species search] After root search: LL=-126665
+[00:08:57] [Species search] After root search: LL=-126665
+
+[00:08:57] [Species search] Starting species tree local SPR search, radius=5, bestLL=-126665, hash=74178)
+[00:08:57] [Species search] Start SPR Round radius=5
+[00:09:09] 	better tree (LL=-126643, hash=20898) Mantamonas_plastica -> node_6
+[00:09:56] 	better tree (LL=-126536, hash=43307) Selaginella_moellendorffii -> node_26
+[00:12:06] 	better tree (LL=-126516, hash=50806) Gefionella_okellyi -> node_7
+[00:12:11] 	better tree (LL=-126503, hash=34350) Gefionella_okellyi -> node_45
+[00:12:31] 	better tree (LL=-126502, hash=81102) Diaphanoeca_grandis -> node_54
+[00:14:01] 	better tree (LL=-126490, hash=46766) Capsaspora_owczarzaki -> node_47
+[00:15:25] 	better tree (LL=-126460, hash=59987) Paraphelidium_tribonemae -> Rozella_allomycis
+[00:17:13] 	better tree (LL=-126418, hash=26718) Ancoracysta_twista -> node_107
+[00:19:48] 	better tree (LL=-126416, hash=72022) Haloplacidia_sp_CaronLabIsolate -> MAST-03A_sp_MAST-3A-sp1
+[00:24:10] 	better tree (LL=-126405, hash=38414) node_0 -> node_125
+[00:24:29] 	better tree (LL=-126395, hash=7498) node_1 -> node_101
+[00:25:54] 	better tree (LL=-126395, hash=55466) node_9 -> node_3
+[00:25:58] 	found better* (LL=-126385, hash=31618)
+[00:26:25] 	better tree (LL=-126380, hash=69717) node_10 -> node_5
+[00:26:52] 	better tree (LL=-126372, hash=34595) node_14 -> node_43
+[00:26:55] 	found better* (LL=-126361, hash=51114)
+[00:27:33] 	better tree (LL=-126300, hash=58834) node_21 -> node_15
+[00:28:17] 	better tree (LL=-126297, hash=15858) node_30 -> node_12
+[00:29:45] 	better tree (LL=-126295, hash=88562) node_43 -> node_17
+[00:29:46] 	found better* (LL=-126290, hash=6762)
+[00:31:15] 	better tree (LL=-126281, hash=9938) node_50 -> node_71
+[00:32:55] 	better tree (LL=-126267, hash=72670) node_71 -> node_72
+[00:34:27] 	better tree (LL=-126265, hash=79978) node_81 -> node_78
+[00:35:49] 	better tree (LL=-126262, hash=39294) node_95 -> node_99
+[00:37:35] 	better tree (LL=-126087, hash=68474) node_107 -> node_114
+[00:41:02] 	better tree (LL=-126068, hash=78180) node_142 -> node_146
+[00:41:35] 	better tree (LL=-126061, hash=49956) node_145 -> node_146
+[00:44:24] 	better tree (LL=-126017, hash=16536) node_169 -> node_153
+[00:44:53] 	better tree (LL=-126003, hash=84963) node_171 -> node_194
+[00:46:32] 	better tree (LL=-125975, hash=56415) node_185 -> node_188
+[00:46:47] 	better tree (LL=-125966, hash=40232) node_186 -> node_110
+[00:47:02] 	better tree (LL=-125845, hash=71588) node_190 -> Porphyra_purpurea
+[00:47:12] 	better tree (LL=-125824, hash=10566) node_193 -> node_185
+[00:47:23] [Species search] Start SPR Round radius=5
+[00:53:36] 	better tree (LL=-125803, hash=12602) Paraphelidium_tribonemae -> node_80
+[00:54:32] 	better tree (LL=-125795, hash=36244) Dictyostelium_discoideum -> node_99
+[00:58:22] 	better tree (LL=-125769, hash=95808) MAST-03A_sp_MAST-3A-sp1 -> node_146
+[01:03:15] 	better tree (LL=-125762, hash=84710) node_7 -> node_45
+[01:03:23] 	better tree (LL=-125761, hash=98456) node_9 -> node_2
+[01:03:27] 	found better* (LL=-125731, hash=79191)
+[01:03:58] 	better tree (LL=-125730, hash=56716) node_11 -> node_1
+[01:04:08] 	better tree (LL=-125718, hash=42650) node_12 -> node_11
+[01:04:55] 	better tree (LL=-125718, hash=23628) node_17 -> node_42
+[01:05:00] 	found better* (LL=-125704, hash=91548)
+[01:06:01] 	better tree (LL=-125697, hash=94498) node_30 -> node_12
+[01:06:02] 	found better* (LL=-125694, hash=29197)
+[01:07:27] 	better tree (LL=-125692, hash=51948) node_43 -> node_42
+[01:07:54] 	better tree (LL=-125689, hash=6825) node_46 -> node_91
+[01:11:42] 	better tree (LL=-125686, hash=41312) node_80 -> node_81
+[01:13:20] 	better tree (LL=-125668, hash=77920) node_96 -> node_93
+[01:13:53] 	better tree (LL=-125665, hash=33212) node_100 -> node_9
+[01:13:54] 	found better* (LL=-125650, hash=32666)
+[01:15:59] 	better tree (LL=-125616, hash=41300) node_114 -> node_171
+[01:16:02] 	better tree (LL=-125541, hash=13230) node_114 -> node_172
+[01:19:26] 	better tree (LL=-125527, hash=71940) node_143 -> node_162
+[01:24:36] 	better tree (LL=-125516, hash=10256) node_185 -> node_189
+[01:25:19] [Species search] Start SPR Round radius=5
+[01:40:00] 	better tree (LL=-125501, hash=184) node_5 -> node_92
+[01:44:49] 	better tree (LL=-125487, hash=7648) node_44 -> node_5
+[01:49:43] 	better tree (LL=-125476, hash=83232) node_91 -> node_5
+[02:01:40] [Species search] Start SPR Round radius=5
+[02:16:33] 	better tree (LL=-125465, hash=78216) node_9 -> node_2
+[02:17:22] 	better tree (LL=-125463, hash=1350) node_13 -> node_36
+[02:18:09] 	better tree (LL=-125461, hash=77848) node_17 -> node_43
+[02:26:46] 	better tree (LL=-125457, hash=82346) node_102 -> node_6
+[02:35:03] 	better tree (LL=-125448, hash=36697) node_171 -> node_176
+[02:37:35] [Species search] Start SPR Round radius=5
+[03:02:19] 	better tree (LL=-125445, hash=28595) node_102 -> node_125
+[03:12:45] [Species search] Start SPR Round radius=5
+[03:15:57] 	better tree (LL=-125444, hash=15891) Diaphanoeca_grandis -> Salpingoeca_kvevrii
+[03:48:01] [Species search] Start SPR Round radius=5
+[04:23:11] After normal search: LL=-125444
+[04:23:11] After normal search: LL=-125444
+
+[04:23:11] [Species search] Root search with depth=3
+[04:23:11] [Species search] Root search with depth=3
+[04:23:41] [Species search] After root search: LL=-125444
+[04:23:41] [Species search] After root search: LL=-125444
+
+[04:23:41] [Species search] Starting species tree transfer-guided search, bestLL=-125444, hash=15891)
+WARNING, CREATING FILE yoyo.txt
+[04:24:30] [Species search] Start new transfer-guided round. Inferred transfers:9221
+[04:25:04] [Species search] After transfer search: LL=-125301
+[04:25:04] After normal search: LL=-125301
+
+[04:25:04] [Species search] Root search with depth=3
+[04:25:04] [Species search] Root search with depth=3
+[04:25:34] [Species search] After root search: LL=-125301
+[04:25:34] [Species search] After root search: LL=-125301
+
+[04:25:34] [Species search] Root search with depth=5
+[04:25:34] [Species search] Root search with depth=5
+[04:27:28] [Species search] After root search: LL=-125301
+Saving per-family likelihoods into: SpeciesRax/roots_consel_likelihoods.txt
+Saving the corresponding trees into: SpeciesRax/roots_consel_treelist.txt
+trees = 71
+[04:27:28] [Species search] After root search: LL=-125301
+
+[04:27:28] [Species search] End of optimizing the species tree
+[04:27:28] Optimizing reconciliation rates and gene trees with radius=1... 

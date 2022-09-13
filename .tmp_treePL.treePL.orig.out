@@ -1,0 +1,238 @@
+outfile: .tmp_treePL.dated.tre
+setting the maximum number of threads to 8
+setting optad: 0
+setting opt: 1
+cvstart: 1000
+cv number of full iterations: 3
+set thorough: true (MAY TAKE A WHILE)
+finished reading config file
+using system clock for random number seed = 1663094127
+setting 02c5108ee7d70bc8a746cd540c1125e5 min: 1116.7271
+setting 0397f3b6d448b8bb3e212b421b6907d3 min: 555.49509
+setting 0549f196259d53330bfe8a3db4428fa8 min: 1790.8584
+setting 087dd87bdcddac10a52735c72baed8e4 min: 640.66278
+setting 0aec19e77e744a88e3d33252ff8ce828 min: 248.02744
+setting 0f17b01d2c729c416362428c418594c8 min: 578.88252
+setting 0ffc1b57ffbcc469dd7ad537f05f4100 min: 1564.8632
+setting 144d8d439f4a062031a67f81133aa16c min: 89.719436
+setting 184c6d6e3fedcb108b9087c298113c90 min: 680.0774
+setting 1a99c7bc505a31101cacee44e6f6f72e min: 743.52289
+setting 1dbf4d759e8492715144eee58830b50f min: 1718.7998
+setting 2a0c779d814f433a8c519e2209fd4573 min: 275.49924
+setting 2b5ccfba0613ca4e191497ef99ccc4c7 min: 1580.117
+setting 2b6a05b92cd3e75a063302f6a0d87d64 min: 386.86498
+setting 2c4fa423ddcba64a0132d13e078ac7f4 min: 831.40682
+setting 2e7e142f11ef298822d9cb14d3497df1 min: 191.92995
+setting 302a8150b34ff7bb1eb643250518bd48 min: 1540.7364
+setting 40ec84786155244551bc82f2517c9f22 min: 904.0121
+setting 41c78f43a40f97bd00379679205b9ce4 min: 252.36714
+setting 43e7753cf62c3414b54254dfccc1856d min: 1290.2938
+setting 4ae0e6c4ed59585a2233c2e51d26d886 min: 940.29901
+setting 4b5e54a5bea897dfb2a10451da2a444e min: 529.54253
+setting 558cf3f7ee0754fb5480a7551f596886 min: 1078.9007
+setting 57f11bce5ab272c5ce7fe033cf57edd8 min: 926.86893
+setting 59032cf8af820b626cf6262dd02517fa min: 306.8434
+setting 5b54d156f5a48c6671270bf5419d68c2 min: 358.62533
+setting 612397c9b805a7f81f403ec053b27d89 min: 510.95314
+setting 6da2a90ee4c60c5608b3c662391d5759 min: 911.85262
+setting 733f096cd92fdd5f044902f84443a9b4 min: 304.43279
+setting 739352accc1a60b7bcafe6307cc592d8 min: 1628.3267
+setting 74c67aa74d43e0b21542f7f8bef3ae6c min: 979.85781
+setting 7939fea24f192840ed2683cb38c3e1ea min: 617.35376
+setting 7de8439c350fdf2c97bde8b045274140 min: 872.77454
+setting 7fd96546aec2c9c252ad0cc503b6f635 min: 1124.7566
+setting 80c00eeba403a804e5f037d731c20d4a min: 1550.5096
+setting 80fa8498b9b428eb0d24fbcf030cf06e min: 646.28887
+setting 8c71ecdd4d2bde60d62ba136c653c37b min: 953.09861
+setting 8c806c28885b2ef246f51cd90fde977e min: 1046.628
+setting 8d009936abd07f3f288fb8262ec5bc3a min: 300.38981
+setting 8db6d17f3577556c728e5b5ffbaf5311 min: 273.64202
+setting 8f4ccfa36ce24e9ab837dec48934bcf5 min: 1496.1573
+setting 91a6925802565dc41539480396f351d1 min: 1067.2411
+setting 91dca1ea7ca15a42a1b7ff7af2d89dbe min: 1035.8493
+setting 94585c6e15459d25577d05a655aa8b1d min: 1373.2617
+setting 9564f2b01359a914bec05f9dc790d73f min: 1337.5103
+setting 9bdc8e857fd6610125836f101b583d3c min: 334.77021
+setting 9c8e7d6fd298e7573d363133e1f15e3a min: 1365.4514
+setting a03fcae1bb38c4cd8aa26ea6f4667248 min: 641.84857
+setting a1110a8ec93df89c691c1a61e8dd14f2 min: 600.21802
+setting a14f4874f0b4b95f313363b058ec687c min: 446.67817
+setting a1981fb478cd50fbe24866dce5a0b3fd min: 1180.471
+setting a2ba932016e288c7dead88a3d159ebef min: 467.31565
+setting a3e0aa2e66785221f834d91dd6b19512 min: 437.75788
+setting a5b25e941a38cf861b340a738f4faba4 min: 437.58896
+setting aac153c3cfc5158891d6091e0fb1411f min: 1383.3171
+setting ab5087e8a05b0a9322912ee071ec3275 min: 921.9408
+setting af66cf91cae8ab12bcf0262e56c68a4e min: 199.76549
+setting b65d5827fc8591b7e7dbd5f47d11e4fd min: 895.408
+setting ba4eb879a67423ef2b04162f94dd1f20 min: 749.79955
+setting bb3f1710d2b2620915b4370a3f4edb1d min: 1471.9038
+setting c09646d28068f24e69efb476c068c9f9 min: 713.40481
+setting c0d055cbb750e66b0ca96d91dd2ecb5e min: 781.83703
+setting c20871e7c45302549be8351d88a71ef6 min: 395.45092
+setting c471fa6d515e1db49c63184a02f063e6 min: 339.75342
+setting c47c1ac741203821d836369936cb745b min: 1115.8687
+setting ccca1b1dc2fc4ebefdd846b9eee05136 min: 210.36534
+setting cd06512e40b6275b59022e4f745946e9 min: 851.79149
+setting d2f12ca00e2595475394569566a322f8 min: 712.21933
+setting d73925fb143352f9ed8b5f989d63146b min: 778.28562
+setting d9615527f658d768a4eec165b9bd3a20 min: 576.22977
+setting db482d7a51efc0f21b6a500238742bc7 min: 855.90012
+setting de10dfd1a139ed4522dfc497a9152258 min: 661.31116
+setting dfb23f975e562a1370d7b54f4d70483d min: 636.41854
+setting e6bbc69ad7648bc6cd1cc0e42d907738 min: 1028.5652
+setting eae3c0e0f305dd2d2e8387d665b5e8b9 min: 589.08083
+setting ed3178647e913c2fd1506d50137f7bce min: 1117.0615
+setting f07bdc787f04651f8921150c1b98f55b min: 277.6259
+setting f50e00dd1bc0e19640626b91e9c9f538 min: 1241.945
+setting fe48f32286238534b5905d754767188b min: 1249.4015
+setting 02c5108ee7d70bc8a746cd540c1125e5 max: 1116.7271
+setting 0397f3b6d448b8bb3e212b421b6907d3 max: 555.49509
+setting 0549f196259d53330bfe8a3db4428fa8 max: 1790.8584
+setting 087dd87bdcddac10a52735c72baed8e4 max: 640.66278
+setting 0aec19e77e744a88e3d33252ff8ce828 max: 248.02744
+setting 0f17b01d2c729c416362428c418594c8 max: 578.88252
+setting 0ffc1b57ffbcc469dd7ad537f05f4100 max: 1564.8632
+setting 144d8d439f4a062031a67f81133aa16c max: 89.719436
+setting 184c6d6e3fedcb108b9087c298113c90 max: 680.0774
+setting 1a99c7bc505a31101cacee44e6f6f72e max: 743.52289
+setting 1dbf4d759e8492715144eee58830b50f max: 1718.7998
+setting 2a0c779d814f433a8c519e2209fd4573 max: 275.49924
+setting 2b5ccfba0613ca4e191497ef99ccc4c7 max: 1580.117
+setting 2b6a05b92cd3e75a063302f6a0d87d64 max: 386.86498
+setting 2c4fa423ddcba64a0132d13e078ac7f4 max: 831.40682
+setting 2e7e142f11ef298822d9cb14d3497df1 max: 191.92995
+setting 302a8150b34ff7bb1eb643250518bd48 max: 1540.7364
+setting 40ec84786155244551bc82f2517c9f22 max: 904.0121
+setting 41c78f43a40f97bd00379679205b9ce4 max: 252.36714
+setting 43e7753cf62c3414b54254dfccc1856d max: 1290.2938
+setting 4ae0e6c4ed59585a2233c2e51d26d886 max: 940.29901
+setting 4b5e54a5bea897dfb2a10451da2a444e max: 529.54253
+setting 558cf3f7ee0754fb5480a7551f596886 max: 1078.9007
+setting 57f11bce5ab272c5ce7fe033cf57edd8 max: 926.86893
+setting 59032cf8af820b626cf6262dd02517fa max: 306.8434
+setting 5b54d156f5a48c6671270bf5419d68c2 max: 358.62533
+setting 612397c9b805a7f81f403ec053b27d89 max: 510.95314
+setting 6da2a90ee4c60c5608b3c662391d5759 max: 911.85262
+setting 733f096cd92fdd5f044902f84443a9b4 max: 304.43279
+setting 739352accc1a60b7bcafe6307cc592d8 max: 1628.3267
+setting 74c67aa74d43e0b21542f7f8bef3ae6c max: 979.85781
+setting 7939fea24f192840ed2683cb38c3e1ea max: 617.35376
+setting 7de8439c350fdf2c97bde8b045274140 max: 872.77454
+setting 7fd96546aec2c9c252ad0cc503b6f635 max: 1124.7566
+setting 80c00eeba403a804e5f037d731c20d4a max: 1550.5096
+setting 80fa8498b9b428eb0d24fbcf030cf06e max: 646.28887
+setting 8c71ecdd4d2bde60d62ba136c653c37b max: 953.09861
+setting 8c806c28885b2ef246f51cd90fde977e max: 1046.628
+setting 8d009936abd07f3f288fb8262ec5bc3a max: 300.38981
+setting 8db6d17f3577556c728e5b5ffbaf5311 max: 273.64202
+setting 8f4ccfa36ce24e9ab837dec48934bcf5 max: 1496.1573
+setting 91a6925802565dc41539480396f351d1 max: 1067.2411
+setting 91dca1ea7ca15a42a1b7ff7af2d89dbe max: 1035.8493
+setting 94585c6e15459d25577d05a655aa8b1d max: 1373.2617
+setting 9564f2b01359a914bec05f9dc790d73f max: 1337.5103
+setting 9bdc8e857fd6610125836f101b583d3c max: 334.77021
+setting 9c8e7d6fd298e7573d363133e1f15e3a max: 1365.4514
+setting a03fcae1bb38c4cd8aa26ea6f4667248 max: 641.84857
+setting a1110a8ec93df89c691c1a61e8dd14f2 max: 600.21802
+setting a14f4874f0b4b95f313363b058ec687c max: 446.67817
+setting a1981fb478cd50fbe24866dce5a0b3fd max: 1180.471
+setting a2ba932016e288c7dead88a3d159ebef max: 467.31565
+setting a3e0aa2e66785221f834d91dd6b19512 max: 437.75788
+setting a5b25e941a38cf861b340a738f4faba4 max: 437.58896
+setting aac153c3cfc5158891d6091e0fb1411f max: 1383.3171
+setting ab5087e8a05b0a9322912ee071ec3275 max: 921.9408
+setting af66cf91cae8ab12bcf0262e56c68a4e max: 199.76549
+setting b65d5827fc8591b7e7dbd5f47d11e4fd max: 895.408
+setting ba4eb879a67423ef2b04162f94dd1f20 max: 749.79955
+setting bb3f1710d2b2620915b4370a3f4edb1d max: 1471.9038
+setting c09646d28068f24e69efb476c068c9f9 max: 713.40481
+setting c0d055cbb750e66b0ca96d91dd2ecb5e max: 781.83703
+setting c20871e7c45302549be8351d88a71ef6 max: 395.45092
+setting c471fa6d515e1db49c63184a02f063e6 max: 339.75342
+setting c47c1ac741203821d836369936cb745b max: 1115.8687
+setting ccca1b1dc2fc4ebefdd846b9eee05136 max: 210.36534
+setting cd06512e40b6275b59022e4f745946e9 max: 851.79149
+setting d2f12ca00e2595475394569566a322f8 max: 712.21933
+setting d73925fb143352f9ed8b5f989d63146b max: 778.28562
+setting d9615527f658d768a4eec165b9bd3a20 max: 576.22977
+setting db482d7a51efc0f21b6a500238742bc7 max: 855.90012
+setting de10dfd1a139ed4522dfc497a9152258 max: 661.31116
+setting dfb23f975e562a1370d7b54f4d70483d max: 636.41854
+setting e6bbc69ad7648bc6cd1cc0e42d907738 max: 1028.5652
+setting eae3c0e0f305dd2d2e8387d665b5e8b9 max: 589.08083
+setting ed3178647e913c2fd1506d50137f7bce max: 1117.0615
+setting f07bdc787f04651f8921150c1b98f55b max: 277.6259
+setting f50e00dd1bc0e19640626b91e9c9f538 max: 1241.945
+setting fe48f32286238534b5905d754767188b max: 1249.4015
+preorder prep
+calculating character durations
+setting min and max
+setting up all constraints
+getting feasible start dates
+start rate 0.0046416479
+numparams:1
+initial calc: 25570761
+LF SIM
+exit siman: 281937.27
+setting NLOPT: LD_LBFGS 
+result: -1
+calculating without gradient (might want to try a different opt=VALUE)
+setting NLOPT : LN_SBPLX 
+result: 3
+after opt calc1: 281937.27
+nfeval: 1 rc: Local minima reach (|pg| ~= 0)
+calculating without gradient (might want to try a different optad=VALUE)
+setting NLOPT : LN_SBPLX 
+result: 3
+after opt calc2: 281937.27
+LF SIM
+exit siman: 281937.27
+setting NLOPT: LD_LBFGS 
+result: -1
+calculating without gradient (might want to try a different opt=VALUE)
+setting NLOPT : LN_SBPLX 
+result: 3
+after opt calc1: 281937.27
+nfeval: 1 rc: Local minima reach (|pg| ~= 0)
+calculating without gradient (might want to try a different optad=VALUE)
+setting NLOPT : LN_SBPLX 
+result: 3
+after opt calc2: 281937.27
+LF SIM
+exit siman: 281937.27
+setting NLOPT: LD_LBFGS 
+result: -1
+calculating without gradient (might want to try a different opt=VALUE)
+setting NLOPT : LN_SBPLX 
+result: 3
+after opt calc1: 281937.27
+nfeval: 1 rc: Local minima reach (|pg| ~= 0)
+calculating without gradient (might want to try a different optad=VALUE)
+setting NLOPT : LN_SBPLX 
+result: 3
+after opt calc2: 281937.27
+exited lf converged :1
+lf calc: 281937.27
+numparams:158
+smoothing:100
+281937.27
+exit siman: 257742.05
+setting NLOPT: LD_LBFGS 
+result: 3
+after opt calc1: 249916.45
+nfeval: 68 rc: Linear search failed
+after opt calc2: 249916.45
+exit siman: 249916.45
+setting NLOPT: LD_LBFGS 
+result: 3
+after opt calc1: 249916.45
+nfeval: 72 rc: Linear search failed
+after opt calc2: 249916.45
+exit siman: 249916.45
+setting NLOPT: LD_LBFGS 
+result: 3
+after opt calc1: 249916.45
+nfeval: 71 rc: Linear search failed
+after opt calc2: 249916.45
+after opt calc: 249916.45

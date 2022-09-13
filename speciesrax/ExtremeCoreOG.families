@@ -1,0 +1,856 @@
+[FAMILIES]
+- OG0001474
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001474-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001474_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001474-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001474-clipkit_fa/OG0001474-clipkit_fa.raxml.bestModel
+- OG0001476
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001476-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001476_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001476-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001476-clipkit_fa/OG0001476-clipkit_fa.raxml.bestModel
+- OG0001481
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001481-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001481_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001481-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001481-clipkit_fa/OG0001481-clipkit_fa.raxml.bestModel
+- OG0001486
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001486-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001486_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001486-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001486-clipkit_fa/OG0001486-clipkit_fa.raxml.bestModel
+- OG0001487
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001487-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001487_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001487-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001487-clipkit_fa/OG0001487-clipkit_fa.raxml.bestModel
+- OG0001526
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001526-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001526_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001526-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001526-clipkit_fa/OG0001526-clipkit_fa.raxml.bestModel
+- OG0001530
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001530-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001530_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001530-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001530-clipkit_fa/OG0001530-clipkit_fa.raxml.bestModel
+- OG0001538
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001538-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001538_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001538-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001538-clipkit_fa/OG0001538-clipkit_fa.raxml.bestModel
+- OG0001540
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001540-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001540_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001540-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001540-clipkit_fa/OG0001540-clipkit_fa.raxml.bestModel
+- OG0001549
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001549-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001549_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001549-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001549-clipkit_fa/OG0001549-clipkit_fa.raxml.bestModel
+- OG0001558
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001558-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001558_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001558-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001558-clipkit_fa/OG0001558-clipkit_fa.raxml.bestModel
+- OG0001566
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001566-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001566_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001566-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001566-clipkit_fa/OG0001566-clipkit_fa.raxml.bestModel
+- OG0001569
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001569-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001569_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001569-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001569-clipkit_fa/OG0001569-clipkit_fa.raxml.bestModel
+- OG0001578
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001578-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001578_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001578-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001578-clipkit_fa/OG0001578-clipkit_fa.raxml.bestModel
+- OG0001580
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001580-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001580_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001580-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001580-clipkit_fa/OG0001580-clipkit_fa.raxml.bestModel
+- OG0001584
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001584-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001584_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001584-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001584-clipkit_fa/OG0001584-clipkit_fa.raxml.bestModel
+- OG0001591
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001591-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001591_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001591-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001591-clipkit_fa/OG0001591-clipkit_fa.raxml.bestModel
+- OG0001593
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001593-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001593_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001593-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001593-clipkit_fa/OG0001593-clipkit_fa.raxml.bestModel
+- OG0001598
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001598-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001598_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001598-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001598-clipkit_fa/OG0001598-clipkit_fa.raxml.bestModel
+- OG0001612
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001612-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001612_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001612-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001612-clipkit_fa/OG0001612-clipkit_fa.raxml.bestModel
+- OG0001619
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001619-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001619_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001619-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001619-clipkit_fa/OG0001619-clipkit_fa.raxml.bestModel
+- OG0001625
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001625-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001625_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001625-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001625-clipkit_fa/OG0001625-clipkit_fa.raxml.bestModel
+- OG0001626
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001626-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001626_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001626-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001626-clipkit_fa/OG0001626-clipkit_fa.raxml.bestModel
+- OG0001627
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001627-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001627_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001627-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001627-clipkit_fa/OG0001627-clipkit_fa.raxml.bestModel
+- OG0001666
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001666-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001666_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001666-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001666-clipkit_fa/OG0001666-clipkit_fa.raxml.bestModel
+- OG0001668
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001668-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001668_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001668-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001668-clipkit_fa/OG0001668-clipkit_fa.raxml.bestModel
+- OG0001676
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001676-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001676_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001676-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001676-clipkit_fa/OG0001676-clipkit_fa.raxml.bestModel
+- OG0001680
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001680-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001680_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001680-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001680-clipkit_fa/OG0001680-clipkit_fa.raxml.bestModel
+- OG0001681
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001681-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001681_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001681-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001681-clipkit_fa/OG0001681-clipkit_fa.raxml.bestModel
+- OG0001687
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001687-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001687_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001687-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001687-clipkit_fa/OG0001687-clipkit_fa.raxml.bestModel
+- OG0001693
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001693-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001693_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001693-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001693-clipkit_fa/OG0001693-clipkit_fa.raxml.bestModel
+- OG0001695
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001695-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001695_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001695-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001695-clipkit_fa/OG0001695-clipkit_fa.raxml.bestModel
+- OG0001697
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001697-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001697_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001697-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001697-clipkit_fa/OG0001697-clipkit_fa.raxml.bestModel
+- OG0001702
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001702-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001702_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001702-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001702-clipkit_fa/OG0001702-clipkit_fa.raxml.bestModel
+- OG0001708
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001708-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001708_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001708-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001708-clipkit_fa/OG0001708-clipkit_fa.raxml.bestModel
+- OG0001713
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001713-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001713_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001713-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001713-clipkit_fa/OG0001713-clipkit_fa.raxml.bestModel
+- OG0001717
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001717-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001717_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001717-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001717-clipkit_fa/OG0001717-clipkit_fa.raxml.bestModel
+- OG0001726
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001726-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001726_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001726-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001726-clipkit_fa/OG0001726-clipkit_fa.raxml.bestModel
+- OG0001728
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001728-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001728_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001728-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001728-clipkit_fa/OG0001728-clipkit_fa.raxml.bestModel
+- OG0001734
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001734-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001734_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001734-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001734-clipkit_fa/OG0001734-clipkit_fa.raxml.bestModel
+- OG0001748
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001748-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001748_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001748-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001748-clipkit_fa/OG0001748-clipkit_fa.raxml.bestModel
+- OG0001752
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001752-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001752_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001752-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001752-clipkit_fa/OG0001752-clipkit_fa.raxml.bestModel
+- OG0001767
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001767-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001767_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001767-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001767-clipkit_fa/OG0001767-clipkit_fa.raxml.bestModel
+- OG0001782
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001782-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001782_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001782-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001782-clipkit_fa/OG0001782-clipkit_fa.raxml.bestModel
+- OG0001786
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001786-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001786_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001786-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001786-clipkit_fa/OG0001786-clipkit_fa.raxml.bestModel
+- OG0001799
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001799-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001799_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001799-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001799-clipkit_fa/OG0001799-clipkit_fa.raxml.bestModel
+- OG0001801
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001801-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001801_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001801-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001801-clipkit_fa/OG0001801-clipkit_fa.raxml.bestModel
+- OG0001816
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001816-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001816_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001816-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001816-clipkit_fa/OG0001816-clipkit_fa.raxml.bestModel
+- OG0001817
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001817-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001817_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001817-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001817-clipkit_fa/OG0001817-clipkit_fa.raxml.bestModel
+- OG0001820
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001820-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001820_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001820-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001820-clipkit_fa/OG0001820-clipkit_fa.raxml.bestModel
+- OG0001826
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001826-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001826_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001826-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001826-clipkit_fa/OG0001826-clipkit_fa.raxml.bestModel
+- OG0001830
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001830-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001830_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001830-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001830-clipkit_fa/OG0001830-clipkit_fa.raxml.bestModel
+- OG0001847
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001847-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001847_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001847-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001847-clipkit_fa/OG0001847-clipkit_fa.raxml.bestModel
+- OG0001851
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001851-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001851_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001851-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001851-clipkit_fa/OG0001851-clipkit_fa.raxml.bestModel
+- OG0001855
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001855-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001855_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001855-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001855-clipkit_fa/OG0001855-clipkit_fa.raxml.bestModel
+- OG0001867
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001867-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001867_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001867-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001867-clipkit_fa/OG0001867-clipkit_fa.raxml.bestModel
+- OG0001870
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001870-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001870_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001870-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001870-clipkit_fa/OG0001870-clipkit_fa.raxml.bestModel
+- OG0001874
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001874-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001874_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001874-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001874-clipkit_fa/OG0001874-clipkit_fa.raxml.bestModel
+- OG0001877
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001877-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001877_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001877-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001877-clipkit_fa/OG0001877-clipkit_fa.raxml.bestModel
+- OG0001878
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001878-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001878_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001878-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001878-clipkit_fa/OG0001878-clipkit_fa.raxml.bestModel
+- OG0001882
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001882-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001882_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001882-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001882-clipkit_fa/OG0001882-clipkit_fa.raxml.bestModel
+- OG0001905
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001905-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001905_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001905-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001905-clipkit_fa/OG0001905-clipkit_fa.raxml.bestModel
+- OG0001908
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001908-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001908_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001908-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001908-clipkit_fa/OG0001908-clipkit_fa.raxml.bestModel
+- OG0001909
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001909-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001909_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001909-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001909-clipkit_fa/OG0001909-clipkit_fa.raxml.bestModel
+- OG0001922
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001922-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001922_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001922-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001922-clipkit_fa/OG0001922-clipkit_fa.raxml.bestModel
+- OG0001928
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001928-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001928_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001928-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001928-clipkit_fa/OG0001928-clipkit_fa.raxml.bestModel
+- OG0001930
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001930-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001930_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001930-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001930-clipkit_fa/OG0001930-clipkit_fa.raxml.bestModel
+- OG0001931
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001931-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001931_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001931-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001931-clipkit_fa/OG0001931-clipkit_fa.raxml.bestModel
+- OG0001945
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001945-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001945_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001945-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001945-clipkit_fa/OG0001945-clipkit_fa.raxml.bestModel
+- OG0001952
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001952-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001952_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001952-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001952-clipkit_fa/OG0001952-clipkit_fa.raxml.bestModel
+- OG0001954
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001954-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001954_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001954-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001954-clipkit_fa/OG0001954-clipkit_fa.raxml.bestModel
+- OG0001956
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001956-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001956_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001956-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001956-clipkit_fa/OG0001956-clipkit_fa.raxml.bestModel
+- OG0001966
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001966-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001966_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001966-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001966-clipkit_fa/OG0001966-clipkit_fa.raxml.bestModel
+- OG0001972
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0001972-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0001972_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0001972-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0001972-clipkit_fa/OG0001972-clipkit_fa.raxml.bestModel
+- OG0002005
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002005-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002005_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002005-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002005-clipkit_fa/OG0002005-clipkit_fa.raxml.bestModel
+- OG0002019
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002019-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002019_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002019-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002019-clipkit_fa/OG0002019-clipkit_fa.raxml.bestModel
+- OG0002025
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002025-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002025_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002025-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002025-clipkit_fa/OG0002025-clipkit_fa.raxml.bestModel
+- OG0002033
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002033-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002033_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002033-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002033-clipkit_fa/OG0002033-clipkit_fa.raxml.bestModel
+- OG0002034
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002034-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002034_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002034-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002034-clipkit_fa/OG0002034-clipkit_fa.raxml.bestModel
+- OG0002035
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002035-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002035_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002035-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002035-clipkit_fa/OG0002035-clipkit_fa.raxml.bestModel
+- OG0002038
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002038-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002038_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002038-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002038-clipkit_fa/OG0002038-clipkit_fa.raxml.bestModel
+- OG0002042
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002042-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002042_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002042-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002042-clipkit_fa/OG0002042-clipkit_fa.raxml.bestModel
+- OG0002045
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002045-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002045_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002045-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002045-clipkit_fa/OG0002045-clipkit_fa.raxml.bestModel
+- OG0002059
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002059-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002059_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002059-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002059-clipkit_fa/OG0002059-clipkit_fa.raxml.bestModel
+- OG0002061
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002061-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002061_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002061-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002061-clipkit_fa/OG0002061-clipkit_fa.raxml.bestModel
+- OG0002066
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002066-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002066_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002066-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002066-clipkit_fa/OG0002066-clipkit_fa.raxml.bestModel
+- OG0002076
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002076-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002076_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002076-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002076-clipkit_fa/OG0002076-clipkit_fa.raxml.bestModel
+- OG0002103
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002103-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002103_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002103-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002103-clipkit_fa/OG0002103-clipkit_fa.raxml.bestModel
+- OG0002104
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002104-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002104_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002104-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002104-clipkit_fa/OG0002104-clipkit_fa.raxml.bestModel
+- OG0002105
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002105-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002105_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002105-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002105-clipkit_fa/OG0002105-clipkit_fa.raxml.bestModel
+- OG0002111
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002111-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002111_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002111-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002111-clipkit_fa/OG0002111-clipkit_fa.raxml.bestModel
+- OG0002121
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002121-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002121_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002121-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002121-clipkit_fa/OG0002121-clipkit_fa.raxml.bestModel
+- OG0002122
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002122-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002122_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002122-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002122-clipkit_fa/OG0002122-clipkit_fa.raxml.bestModel
+- OG0002128
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002128-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002128_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002128-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002128-clipkit_fa/OG0002128-clipkit_fa.raxml.bestModel
+- OG0002135
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002135-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002135_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002135-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002135-clipkit_fa/OG0002135-clipkit_fa.raxml.bestModel
+- OG0002142
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002142-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002142_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002142-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002142-clipkit_fa/OG0002142-clipkit_fa.raxml.bestModel
+- OG0002145
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002145-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002145_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002145-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002145-clipkit_fa/OG0002145-clipkit_fa.raxml.bestModel
+- OG0002158
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002158-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002158_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002158-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002158-clipkit_fa/OG0002158-clipkit_fa.raxml.bestModel
+- OG0002162
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002162-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002162_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002162-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002162-clipkit_fa/OG0002162-clipkit_fa.raxml.bestModel
+- OG0002165
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002165-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002165_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002165-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002165-clipkit_fa/OG0002165-clipkit_fa.raxml.bestModel
+- OG0002175
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002175-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002175_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002175-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002175-clipkit_fa/OG0002175-clipkit_fa.raxml.bestModel
+- OG0002176
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002176-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002176_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002176-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002176-clipkit_fa/OG0002176-clipkit_fa.raxml.bestModel
+- OG0002184
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002184-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002184_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002184-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002184-clipkit_fa/OG0002184-clipkit_fa.raxml.bestModel
+- OG0002185
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002185-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002185_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002185-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002185-clipkit_fa/OG0002185-clipkit_fa.raxml.bestModel
+- OG0002198
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002198-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002198_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002198-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002198-clipkit_fa/OG0002198-clipkit_fa.raxml.bestModel
+- OG0002199
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002199-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002199_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002199-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002199-clipkit_fa/OG0002199-clipkit_fa.raxml.bestModel
+- OG0002209
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002209-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002209_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002209-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002209-clipkit_fa/OG0002209-clipkit_fa.raxml.bestModel
+- OG0002214
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002214-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002214_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002214-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002214-clipkit_fa/OG0002214-clipkit_fa.raxml.bestModel
+- OG0002222
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002222-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002222_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002222-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002222-clipkit_fa/OG0002222-clipkit_fa.raxml.bestModel
+- OG0002241
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002241-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002241_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002241-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002241-clipkit_fa/OG0002241-clipkit_fa.raxml.bestModel
+- OG0002253
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002253-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002253_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002253-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002253-clipkit_fa/OG0002253-clipkit_fa.raxml.bestModel
+- OG0002257
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002257-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002257_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002257-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002257-clipkit_fa/OG0002257-clipkit_fa.raxml.bestModel
+- OG0002260
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002260-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002260_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002260-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002260-clipkit_fa/OG0002260-clipkit_fa.raxml.bestModel
+- OG0002274
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002274-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002274_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002274-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002274-clipkit_fa/OG0002274-clipkit_fa.raxml.bestModel
+- OG0002298
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002298-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002298_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002298-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002298-clipkit_fa/OG0002298-clipkit_fa.raxml.bestModel
+- OG0002299
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002299-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002299_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002299-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002299-clipkit_fa/OG0002299-clipkit_fa.raxml.bestModel
+- OG0002319
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002319-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002319_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002319-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002319-clipkit_fa/OG0002319-clipkit_fa.raxml.bestModel
+- OG0002322
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002322-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002322_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002322-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002322-clipkit_fa/OG0002322-clipkit_fa.raxml.bestModel
+- OG0002323
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002323-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002323_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002323-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002323-clipkit_fa/OG0002323-clipkit_fa.raxml.bestModel
+- OG0002325
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002325-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002325_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002325-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002325-clipkit_fa/OG0002325-clipkit_fa.raxml.bestModel
+- OG0002351
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002351-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002351_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002351-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002351-clipkit_fa/OG0002351-clipkit_fa.raxml.bestModel
+- OG0002389
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002389-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002389_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002389-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002389-clipkit_fa/OG0002389-clipkit_fa.raxml.bestModel
+- OG0002390
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002390-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002390_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002390-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002390-clipkit_fa/OG0002390-clipkit_fa.raxml.bestModel
+- OG0002397
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002397-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002397_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002397-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002397-clipkit_fa/OG0002397-clipkit_fa.raxml.bestModel
+- OG0002398
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002398-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002398_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002398-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002398-clipkit_fa/OG0002398-clipkit_fa.raxml.bestModel
+- OG0002411
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002411-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002411_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002411-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002411-clipkit_fa/OG0002411-clipkit_fa.raxml.bestModel
+- OG0002418
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002418-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002418_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002418-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002418-clipkit_fa/OG0002418-clipkit_fa.raxml.bestModel
+- OG0002428
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002428-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002428_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002428-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002428-clipkit_fa/OG0002428-clipkit_fa.raxml.bestModel
+- OG0002440
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002440-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002440_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002440-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002440-clipkit_fa/OG0002440-clipkit_fa.raxml.bestModel
+- OG0002441
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002441-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002441_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002441-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002441-clipkit_fa/OG0002441-clipkit_fa.raxml.bestModel
+- OG0002445
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002445-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002445_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002445-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002445-clipkit_fa/OG0002445-clipkit_fa.raxml.bestModel
+- OG0002454
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002454-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002454_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002454-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002454-clipkit_fa/OG0002454-clipkit_fa.raxml.bestModel
+- OG0002458
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002458-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002458_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002458-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002458-clipkit_fa/OG0002458-clipkit_fa.raxml.bestModel
+- OG0002477
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002477-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002477_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002477-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002477-clipkit_fa/OG0002477-clipkit_fa.raxml.bestModel
+- OG0002504
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002504-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002504_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002504-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002504-clipkit_fa/OG0002504-clipkit_fa.raxml.bestModel
+- OG0002505
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002505-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002505_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002505-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002505-clipkit_fa/OG0002505-clipkit_fa.raxml.bestModel
+- OG0002524
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002524-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002524_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002524-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002524-clipkit_fa/OG0002524-clipkit_fa.raxml.bestModel
+- OG0002541
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002541-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002541_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002541-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002541-clipkit_fa/OG0002541-clipkit_fa.raxml.bestModel
+- OG0002544
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002544-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002544_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002544-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002544-clipkit_fa/OG0002544-clipkit_fa.raxml.bestModel
+- OG0002559
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002559-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002559_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002559-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002559-clipkit_fa/OG0002559-clipkit_fa.raxml.bestModel
+- OG0002573
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002573-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002573_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002573-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002573-clipkit_fa/OG0002573-clipkit_fa.raxml.bestModel
+- OG0002574
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002574-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002574_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002574-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002574-clipkit_fa/OG0002574-clipkit_fa.raxml.bestModel
+- OG0002601
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002601-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002601_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002601-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002601-clipkit_fa/OG0002601-clipkit_fa.raxml.bestModel
+- OG0002613
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002613-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002613_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002613-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002613-clipkit_fa/OG0002613-clipkit_fa.raxml.bestModel
+- OG0002615
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002615-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002615_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002615-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002615-clipkit_fa/OG0002615-clipkit_fa.raxml.bestModel
+- OG0002642
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002642-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002642_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002642-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002642-clipkit_fa/OG0002642-clipkit_fa.raxml.bestModel
+- OG0002656
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002656-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002656_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002656-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002656-clipkit_fa/OG0002656-clipkit_fa.raxml.bestModel
+- OG0002666
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002666-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002666_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002666-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002666-clipkit_fa/OG0002666-clipkit_fa.raxml.bestModel
+- OG0002671
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002671-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002671_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002671-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002671-clipkit_fa/OG0002671-clipkit_fa.raxml.bestModel
+- OG0002674
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002674-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002674_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002674-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002674-clipkit_fa/OG0002674-clipkit_fa.raxml.bestModel
+- OG0002694
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002694-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002694_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002694-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002694-clipkit_fa/OG0002694-clipkit_fa.raxml.bestModel
+- OG0002698
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002698-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002698_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002698-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002698-clipkit_fa/OG0002698-clipkit_fa.raxml.bestModel
+- OG0002738
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002738-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002738_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002738-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002738-clipkit_fa/OG0002738-clipkit_fa.raxml.bestModel
+- OG0002806
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002806-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002806_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002806-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002806-clipkit_fa/OG0002806-clipkit_fa.raxml.bestModel
+- OG0002821
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002821-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002821_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002821-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002821-clipkit_fa/OG0002821-clipkit_fa.raxml.bestModel
+- OG0002841
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002841-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002841_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002841-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002841-clipkit_fa/OG0002841-clipkit_fa.raxml.bestModel
+- OG0002844
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002844-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002844_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002844-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002844-clipkit_fa/OG0002844-clipkit_fa.raxml.bestModel
+- OG0002849
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002849-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002849_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002849-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002849-clipkit_fa/OG0002849-clipkit_fa.raxml.bestModel
+- OG0002877
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002877-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002877_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002877-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002877-clipkit_fa/OG0002877-clipkit_fa.raxml.bestModel
+- OG0002904
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002904-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002904_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002904-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002904-clipkit_fa/OG0002904-clipkit_fa.raxml.bestModel
+- OG0002905
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002905-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002905_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002905-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002905-clipkit_fa/OG0002905-clipkit_fa.raxml.bestModel
+- OG0002925
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002925-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002925_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002925-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002925-clipkit_fa/OG0002925-clipkit_fa.raxml.bestModel
+- OG0002955
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002955-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002955_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002955-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002955-clipkit_fa/OG0002955-clipkit_fa.raxml.bestModel
+- OG0002969
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0002969-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0002969_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0002969-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0002969-clipkit_fa/OG0002969-clipkit_fa.raxml.bestModel
+- OG0003044
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0003044-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0003044_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0003044-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0003044-clipkit_fa/OG0003044-clipkit_fa.raxml.bestModel
+- OG0003099
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0003099-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0003099_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0003099-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0003099-clipkit_fa/OG0003099-clipkit_fa.raxml.bestModel
+- OG0003101
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0003101-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0003101_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0003101-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0003101-clipkit_fa/OG0003101-clipkit_fa.raxml.bestModel
+- OG0003157
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0003157-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0003157_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0003157-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0003157-clipkit_fa/OG0003157-clipkit_fa.raxml.bestModel
+- OG0003283
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0003283-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0003283_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0003283-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0003283-clipkit_fa/OG0003283-clipkit_fa.raxml.bestModel
+- OG0003341
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0003341-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0003341_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0003341-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0003341-clipkit_fa/OG0003341-clipkit_fa.raxml.bestModel
+- OG0003619
+starting_gene_tree = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_UnreconciledTrees/OG0003619-clipkit_fa.raxml.bestTree
+mapping = /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG_SppGeneMaps/OG0003619_SppProtMap.link
+alignment = /home/ubuntu/environment/analyses/pargenes/Extreme-Core-OGs/extr-core-og-trimmed-msas/OG0003619-clipkit.fa
+subst_model = /home/ubuntu/environment/analyses/pargenes/EukProt_TCS_ExtremeCoreOGs/mlsearch_run/results/OG0003619-clipkit_fa/OG0003619-clipkit_fa.raxml.bestModel

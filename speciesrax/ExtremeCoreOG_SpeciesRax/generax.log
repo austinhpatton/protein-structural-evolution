@@ -1,0 +1,109 @@
+GeneRax was called as follow:
+/home/ubuntu/environment/software/GeneRax/build/bin/generax --families /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG.families --strategy SPR --si-strategy HYBRID --species-tree MiniNJ --rec-model UndatedDTL --per-family-rates --prune-species-tree --si-estimate-bl --si-spr-radius 5 --max-spr-radius 5 --si-quartet-support --prefix ExtremeCoreOG_SpeciesRax 
+
+General information:
+- Output prefix: ExtremeCoreOG_SpeciesRax
+- Families information: /home/ubuntu/environment/analyses/speciesrax/ExtremeCoreOG.families
+- Species tree: MiniNJ
+- You are running GeneRax without MPI (no parallelization)
+- Random seed: 123
+- Reconciliation model: UndatedDTL
+- DTL rates: per family rates
+- Infer ML reconciliation: ON
+- Unrooted reconciliation likelihood: OFF
+- Prune species tree mode: ON
+
+Species tree inference information:
+- Species tree Strategy: HYBRID
+- Quartet branch supports estimation: ON
+- Branch length estimationON
+- SPR radius: 5
+
+Gene tree correction information:
+- Gene tree search strategy: SPR
+- Max gene SPR radius: 5
+
+[00:00:00] Filtering invalid families...
+
+Error in family OG0001476: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001486: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001526: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001566: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001612: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001627: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001668: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001681: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001695: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001734: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001767: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001801: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001817: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001826: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001867: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001870: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001874: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001945: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001952: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001954: Cannot read alignment file (file exists but is invalid)
+Error in family OG0001956: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002005: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002034: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002045: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002103: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002105: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002122: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002128: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002162: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002185: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002198: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002209: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002214: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002222: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002298: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002299: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002319: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002322: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002323: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002325: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002351: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002389: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002390: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002398: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002411: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002428: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002441: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002445: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002477: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002524: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002656: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002666: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002671: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002694: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002698: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002738: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002841: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002849: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002905: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002925: Cannot read alignment file (file exists but is invalid)
+Error in family OG0002969: Cannot read alignment file (file exists but is invalid)
+Error in family OG0003044: Cannot read alignment file (file exists but is invalid)
+Error in family OG0003619: Cannot read alignment file (file exists but is invalid)
+WARNING!!! Found 63 invalid families (they will be discarded from the analysis)
+End of instance initialization
+[00:00:00] Starting species tree initialization...
+[00:00:01] End of species tree initialization
+[00:00:01] Filtering invalid families based on the starting species tree...
+
+[00:00:02] Gathering statistics about the families...
+[00:00:02] Input data information:
+- Number of gene families: 108
+- Number of species: 196
+- Total number of genes: 33303
+- Average number of genes per family: 308
+- Maximum number of genes per family: 384
+- Species covered with the smallest family coverage: "Eucheuma_denticulatum" (covered by 68/108 families)
+- Average (over species) species family coverage: 100
+
+Saving tree to ExtremeCoreOG_SpeciesRax/species_trees/inferred_species_tree.newick
+
+[00:00:03] Start optimizing the species tree with fixed gene trees (on 108 families 
